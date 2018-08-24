@@ -2,15 +2,41 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharactersPattern : MonoBehaviour {
+public class CharactersPattern : MonoBehaviour 
+{
+//------------------------------------------------------------------------CONSTANTS:
 
-	// Use this for initialization
-	void Start () {
-		
+//---------------------------------------------------------------------------FIELDS:
+	[System.Serializable]
+	public class Patrol
+	{
+		public int Day;
+		public int Time;
+		public GameObject Room;
+	}
+
+	[System.Serializable]
+	public class Insanity
+	{
+		public int InsanityLevel;
+		public Patrol[] PatrolPerInsanityLevel;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
+	public Insanity[] CharacterMovement;
+//---------------------------------------------------------------------MONO METHODS:
+
+	void Start() 
+	{
+
 	}
+		
+	void Update()
+    {
+
+    }
+
+//--------------------------------------------------------------------------METHODS:
+
+//--------------------------------------------------------------------------HELPERS:
+	
 }
