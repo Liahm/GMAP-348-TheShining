@@ -19,7 +19,7 @@ public class GameManager : Singleton<GameManager>
 	public string DepletedText;
 
 	[System.NonSerialized]
-	public bool AllowScare;
+	public bool AllowScare, Scared;
 	private float tempRealTimePerDay, tempDayStart, tempDayEnds, maxScareMeterValue;
 	private bool day;
 	private Vector3 mousePos;
@@ -50,7 +50,7 @@ public class GameManager : Singleton<GameManager>
 		if(GameDay == 3)
 		{
 			//Check for end of game
-			EndGame();
+			NoWinnerEndGame();
 		}
 
 		if(GameClock <= DayEnds)
@@ -76,6 +76,11 @@ public class GameManager : Singleton<GameManager>
     }
 
 //--------------------------------------------------------------------------METHODS:
+
+	public void EndGame()	
+	{
+		Debug.Log("IT'S DAY 3");
+	}
 	public void ScareMeter()
 	{
 		//Debug.Log(ScareMeterValue);
@@ -107,11 +112,14 @@ public class GameManager : Singleton<GameManager>
 			Fill.color = Color.yellow;
 	}
 //--------------------------------------------------------------------------HELPERS:
-	private void EndGame()
+	
+	private void NoWinnerEndGame()
 	{
-		Debug.Log("IT'S DAY 3");
+		//Check for insanity levels on all characters
+		//If none are level 3 or higher, you didn't win the game
+		//Get highest rank
+		//Load next scene with Highest Rank name saved for usage.
 	}
-
 	private void MouseMovement()
 	{
 		if(Input.GetKeyDown(KeyCode.Mouse0))
@@ -138,6 +146,7 @@ public class GameManager : Singleton<GameManager>
 			//Debug.Log("Scare allowed");
 			ScareMeterValue -= ScareUsage;
 			Bar.value -= ScareUsage;
+			Scared = true;
 			insane.Active = false;
 		}
 	}

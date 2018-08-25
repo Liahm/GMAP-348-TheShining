@@ -71,7 +71,14 @@ public class InsanityTriggers : MonoBehaviour
 			{
 				Active = true;
 				//Can be clicked
+				if(GameManager.Instance.Scared)
+				{
+					CharactersPattern cPat = col.GetComponent<CharactersPattern>();
+					cPat.Scared = true;
+
+				}
 			}
+			
 		}
 	}
 

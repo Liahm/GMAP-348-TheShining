@@ -43,7 +43,7 @@ public class CharactersPattern : MonoBehaviour
 	}
 	
 	public float CharacterSpeed;
-	public int InsanityValue, InsanityTreshHolds;
+	public int InsanityValue, InsanityTreshHolds, TotalInsanityValue;
 	public Insanity[] CharacterMovement;
 	[System.NonSerialized]
 	public bool Scared;
@@ -89,6 +89,14 @@ public class CharactersPattern : MonoBehaviour
 			{
 				InsanityValue++;
 				insanityHits = InsanityTreshHolds;
+				if(InsanityValue == TotalInsanityValue)
+				{
+					GameManager.Instance.EndGame();
+				}
+			}
+			if(CharacterMovement.Length > InsanityValue)
+			{
+				InsanityValue--;
 			}
 			Scared = false;
 		}
