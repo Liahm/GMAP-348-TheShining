@@ -43,14 +43,14 @@ public class CharactersPattern : MonoBehaviour
 	}
 	
 	public float CharacterSpeed;
-	public int InsanityValue, InsanityTreshHolds, TotalInsanityValue;
+	public int InsanityValue, InsanityTresholds, TotalInsanityValue;
 	public Insanity[] CharacterMovement;
 	[System.NonSerialized]
 	public bool Scared;
 
 	private GameObject endDestination;
 	
-	public int insanityHits, patrolVal = 0;
+	private int insanityHits, patrolVal = 0;
 	private NavMeshAgent Agent;
 	private bool add, moving;
 //---------------------------------------------------------------------MONO METHODS:
@@ -59,7 +59,7 @@ public class CharactersPattern : MonoBehaviour
 	{
 		add = false;
 		moving = true;
-		insanityHits = InsanityTreshHolds;
+		insanityHits = InsanityTresholds;
 		Agent = GetComponent<NavMeshAgent>();
 		Agent.speed = CharacterSpeed;
 
@@ -102,7 +102,7 @@ public class CharactersPattern : MonoBehaviour
 				{
 					GameManager.Instance.EndGame();
 				}
-				insanityHits = InsanityTreshHolds;
+				insanityHits = InsanityTresholds;
 			}
 			
 			Scared = false;
