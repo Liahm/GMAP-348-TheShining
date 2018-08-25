@@ -18,6 +18,7 @@ public class GameManager : Singleton<GameManager>
 
 	void Start() 
 	{
+		GameDay = 1;
 		tempDayEnds = DayEnds ;
 		tempDayStart = DayStart ;
 		RealTimePerDay *= 60;
@@ -28,6 +29,12 @@ public class GameManager : Singleton<GameManager>
 		
 	void Update()
     {
+		if(GameDay == 3)
+		{
+			//Check for end of game
+			EndGame();
+		}
+
 		if(GameClock <= DayEnds)
 		{
 			GameClock += (Time.deltaTime * ((tempDayEnds - tempDayStart) / (tempRealTimePerDay)));
@@ -47,7 +54,7 @@ public class GameManager : Singleton<GameManager>
 //--------------------------------------------------------------------------METHODS:
 	
 //--------------------------------------------------------------------------HELPERS:
-	private void ClockSystem()
+	private void EndGame()
 	{
 		
 	}
