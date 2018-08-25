@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
-
+using System;
 public class CharactersPattern : MonoBehaviour 
 {
 //------------------------------------------------------------------------CONSTANTS:
@@ -30,7 +30,7 @@ public class CharactersPattern : MonoBehaviour
 		public GameObject RandomRoom()
 		{
 			GetRooms();
-			Room = rooms[Random.Range(0, rooms.Length)];
+			Room = rooms[UnityEngine.Random.Range(0, rooms.Length)];
 			return Room;
 			
 		}
@@ -49,7 +49,8 @@ public class CharactersPattern : MonoBehaviour
 	public bool Scared;
 
 	private GameObject endDestination;
-	private int insanityHits, patrolVal = 0;
+	
+	public int insanityHits, patrolVal = 0;
 	private NavMeshAgent Agent;
 	private bool add, moving;
 //---------------------------------------------------------------------MONO METHODS:
@@ -87,17 +88,23 @@ public class CharactersPattern : MonoBehaviour
 			insanityHits--;
 			if(insanityHits == 0)
 			{
-				InsanityValue++;
-				insanityHits = InsanityTreshHolds;
+				if(CharacterMovement.Length > InsanityValue
+				&& InsanityValue != 0)
+				{
+					InsanityValue--;
+				}
+				else
+				{
+					InsanityValue++;
+					patrolVal = PatrolValueChange();
+				}
 				if(InsanityValue == TotalInsanityValue)
 				{
 					GameManager.Instance.EndGame();
 				}
+				insanityHits = InsanityTreshHolds;
 			}
-			if(CharacterMovement.Length > InsanityValue)
-			{
-				InsanityValue--;
-			}
+			
 			Scared = false;
 		}
     }
@@ -124,5 +131,31 @@ public class CharactersPattern : MonoBehaviour
 		}
 	}
 //--------------------------------------------------------------------------HELPERS:
-	
+	private int PatrolValueChange()
+	{
+		//Change patrolVal when insanity level changes.
+		float[] allTime = new float[CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel.Length];
+
+
+		for(int i = 0; i < CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel.Length; ++i)
+		{
+			allTime[i] = CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[i].Time;
+		}
+
+		var closest = float.MaxValue;
+		var minDifference = float.MaxValue;
+		foreach(var element in allTime)
+		{
+			var difference = Mathf.Abs((long)element - GameManager.Instance.GameClock);
+			if(minDifference >difference)
+			{
+				minDifference = (float)difference;
+				closest = element;
+			}
+		}
+		int index = Array.IndexOf(allTime, closest);
+		//Debug.Log(index);
+
+		return index;
+	}
 }

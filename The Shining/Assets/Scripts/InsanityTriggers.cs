@@ -75,7 +75,7 @@ public class InsanityTriggers : MonoBehaviour
 				{
 					CharactersPattern cPat = col.GetComponent<CharactersPattern>();
 					cPat.Scared = true;
-
+					GameManager.Instance.Scared = false;
 				}
 			}
 			
