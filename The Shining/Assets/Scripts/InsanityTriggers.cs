@@ -8,6 +8,7 @@ public class InsanityTriggers : MonoBehaviour
 
 //---------------------------------------------------------------------------FIELDS:
 	public Sprite HoverSprite;
+	public GameObject HoverTemp;
 	public bool Active;
 	
 	[System.NonSerialized]
@@ -22,6 +23,7 @@ public class InsanityTriggers : MonoBehaviour
         //If your mouse hovers over the GameObject with the script attached, output this message
 		
 		//currentSprite = HoverSprite;
+		HoverTemp.SetActive(true);
 		Debug.Log("Mouse is over: " + gameObject.name);
 		
     }
@@ -30,6 +32,7 @@ public class InsanityTriggers : MonoBehaviour
     {
         //The mouse is no longer hovering over the GameObject so output this message each frame
 		//currentSprite = initialSprite;
+		HoverTemp.SetActive(false);
         Debug.Log("Mouse is no longer on GameObject.");
     }
 

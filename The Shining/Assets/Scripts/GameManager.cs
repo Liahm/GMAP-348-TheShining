@@ -57,6 +57,12 @@ public class GameManager : Singleton<GameManager>
 		{
 			GameClock += (Time.deltaTime * ((tempDayEnds - tempDayStart) / (tempRealTimePerDay)));
 		}
+		else if(GameClock >= DayEnds)
+		{
+			//End Day
+			//Fade to black, then either change scenes, or just move players. IDK yet
+			GameDay++;
+		}
 
 		if(RealTimePerDay > 0 && day)
 		{
@@ -72,7 +78,7 @@ public class GameManager : Singleton<GameManager>
 //--------------------------------------------------------------------------METHODS:
 	public void ScareMeter()
 	{
-		Debug.Log(ScareMeterValue);
+		//Debug.Log(ScareMeterValue);
 		//Replenish the scaremeter
 		if(ScareMeterValue < maxScareMeterValue)
 		{
