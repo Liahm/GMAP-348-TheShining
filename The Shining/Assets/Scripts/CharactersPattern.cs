@@ -30,14 +30,9 @@ public class CharactersPattern : MonoBehaviour
 		public GameObject RandomRoom()
 		{
 			GetRooms();
-			Debug.Log(Room);
-			if (Room == null)
-			{
-				Room = rooms[Random.Range(0, rooms.Length)];
-				return Room;
-			}
-			else
-				return Room = rooms[0];
+			Room = rooms[Random.Range(0, rooms.Length)];
+			return Room;
+			
 		}
 	}
 
@@ -68,7 +63,6 @@ public class CharactersPattern : MonoBehaviour
 		Agent.speed = CharacterSpeed;
 
 		//Hardcoding 0 because this is the start of the level.
-		CharacterMovement[0].PatrolOnThisInsanityLevel[0].GetRooms();
 		endDestination = CharacterMovement[0].PatrolOnThisInsanityLevel[0].Room;
 	}
 		
@@ -119,7 +113,6 @@ public class CharactersPattern : MonoBehaviour
 					endDestination = CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal].RandomRoom();
 				}
 			}
-
 		}
 	}
 //--------------------------------------------------------------------------HELPERS:
