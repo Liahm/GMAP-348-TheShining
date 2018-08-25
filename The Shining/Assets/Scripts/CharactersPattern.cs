@@ -26,15 +26,25 @@ public class CharactersPattern : MonoBehaviour
 				rooms[i] = allRooms[i];
 				//Debug.Log(rooms[i].name);
 			}	
-
+		}
+		public GameObject RandomRoom()
+		{
+			GetRooms();
+			Debug.Log(Room);
+			if (Room == null)
+			{
+				Room = rooms[Random.Range(0, rooms.Length)];
+				return Room;
+			}
+			else
+				return Room = rooms[0];
 		}
 	}
 
 	[System.Serializable]
 	public class Insanity
 	{
-		public int InsanityLevel;
-		public Patrol[] PatrolPerInsanityLevel;
+		public Patrol[] PatrolOnThisInsanityLevel;
 	}
 	
 	public float CharacterSpeed;
@@ -58,8 +68,8 @@ public class CharactersPattern : MonoBehaviour
 		Agent.speed = CharacterSpeed;
 
 		//Hardcoding 0 because this is the start of the level.
-		CharacterMovement[0].PatrolPerInsanityLevel[0].GetRooms();
-		endDestination = CharacterMovement[0].PatrolPerInsanityLevel[0].Room;
+		CharacterMovement[0].PatrolOnThisInsanityLevel[0].GetRooms();
+		endDestination = CharacterMovement[0].PatrolOnThisInsanityLevel[0].Room;
 	}
 		
 	void Update()
@@ -93,13 +103,21 @@ public class CharactersPattern : MonoBehaviour
 //--------------------------------------------------------------------------METHODS:
 	public void ChangeDestination()
 	{
-		if(CharacterMovement[InsanityValue].PatrolPerInsanityLevel.Length > patrolVal)
+		//Check if it's not last patrol
+		if(CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel.Length > patrolVal)
 		{
 			if(GameManager.Instance.GameClock //Time to move
-				>= CharacterMovement[InsanityValue].PatrolPerInsanityLevel[patrolVal].Time
+				>= CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal].Time
 				)
 			{
-				endDestination = CharacterMovement[InsanityValue].PatrolPerInsanityLevel[patrolVal].Room;
+				if(CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal].Room != null)
+				{
+					endDestination = CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal].Room;
+				}
+				else
+				{
+					endDestination = CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal].RandomRoom();
+				}
 			}
 
 		}
