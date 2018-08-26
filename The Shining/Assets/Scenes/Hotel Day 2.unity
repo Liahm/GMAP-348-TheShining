@@ -1424,10 +1424,6 @@ Transform:
   - {fileID: 2006460776}
   - {fileID: 7087884}
   - {fileID: 1100352636}
-  - {fileID: 348524274}
-  - {fileID: 2053043559}
-  - {fileID: 505255286}
-  - {fileID: 1281973704}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -2417,34 +2413,6 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 710955196}
   Active: 0
---- !u!1 &348524273
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 348524274}
-  m_Layer: 0
-  m_Name: Bottom Right Hallway - Top Right
-  m_TagString: Location
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &348524274
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 348524273}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 68.12, y: 2.27, z: -0.73}
-  m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
-  m_Children: []
-  m_Father: {fileID: 190709023}
-  m_RootOrder: 19
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &350822472
 GameObject:
   m_ObjectHideFlags: 0
@@ -3526,34 +3494,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!1 &505255285
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 505255286}
-  m_Layer: 0
-  m_Name: Bottom Right Hallway - Bottom Left
-  m_TagString: Location
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &505255286
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 505255285}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 54.39, y: -11.89, z: -0.73}
-  m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
-  m_Children: []
-  m_Father: {fileID: 190709023}
-  m_RootOrder: 21
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &508156738
 GameObject:
   m_ObjectHideFlags: 0
@@ -4573,7 +4513,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!114 &662147938
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4587,13 +4527,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSpeed: 4
   InsanityValue: 0
-  InsanityTresholds: 0
+  InsanityTreshHolds: 3
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
     - Day: 0
       Time: 8
-      Room: {fileID: 979381779}
+      Room: {fileID: 1628675407}
     - Day: 0
       Time: 8.5
       Room: {fileID: 479831961}
@@ -4637,6 +4577,8 @@ MonoBehaviour:
       Time: 21.5
       Room: {fileID: 1475756827}
   - PatrolOnThisInsanityLevel: []
+  insanityHits: 0
+  patrolVal: 0
 --- !u!4 &662147939
 Transform:
   m_ObjectHideFlags: 0
@@ -4644,7 +4586,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 662147937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 67, y: 16.8, z: -1.717}
+  m_LocalPosition: {x: 22.831, y: -12.233, z: -1.717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 95746398}
@@ -8717,166 +8659,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!1 &1231348302
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1231348303}
-  - component: {fileID: 1231348307}
-  - component: {fileID: 1231348306}
-  - component: {fileID: 1231348305}
-  - component: {fileID: 1231348304}
-  m_Layer: 0
-  m_Name: Son
-  m_TagString: Characters
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1231348303
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1231348302}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.849, y: 16.473, z: -1.717}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children:
-  - {fileID: 1602708501}
-  m_Father: {fileID: 1520088861}
-  m_RootOrder: 2
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!65 &1231348304
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1231348302}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
---- !u!54 &1231348305
-Rigidbody:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1231348302}
-  serializedVersion: 2
-  m_Mass: 1
-  m_Drag: 0
-  m_AngularDrag: 0.05
-  m_UseGravity: 0
-  m_IsKinematic: 1
-  m_Interpolate: 0
-  m_Constraints: 0
-  m_CollisionDetection: 0
---- !u!195 &1231348306
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1231348302}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.29
-  m_Speed: 3.5
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 120
-  m_StoppingDistance: 0
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 1
-  m_BaseOffset: 0
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
---- !u!114 &1231348307
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1231348302}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: baa1ec7f93a2bf14f9dc0ed8fe400f83, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  CharacterSpeed: 4
-  InsanityValue: 0
-  InsanityTresholds: 0
-  TotalInsanityValue: 4
-  CharacterMovement:
-  - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 9
-      Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 10
-      Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 11
-      Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 11.25
-      Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 12
-      Room: {fileID: 512699898}
-    - Day: 0
-      Time: 13
-      Room: {fileID: 570547318}
-    - Day: 0
-      Time: 13.5
-      Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 13.5
-      Room: {fileID: 7087883}
-    - Day: 0
-      Time: 14
-      Room: {fileID: 348524273}
-    - Day: 0
-      Time: 14
-      Room: {fileID: 2053043558}
-    - Day: 0
-      Time: 14
-      Room: {fileID: 505255285}
-    - Day: 0
-      Time: 14
-      Room: {fileID: 1281973703}
-    - Day: 0
-      Time: 16
-      Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 17
-      Room: {fileID: 0}
-    - Day: 0
-      Time: 18.5
-      Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19
-      Room: {fileID: 0}
-    - Day: 0
-      Time: 20
-      Room: {fileID: 979381779}
-    - Day: 0
-      Time: 21
-      Room: {fileID: 1475756827}
-  - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 9.5
-      Room: {fileID: 570547318}
-  - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 10
-      Room: {fileID: 109071200}
 --- !u!1 &1236625450
 GameObject:
   m_ObjectHideFlags: 0
@@ -9183,34 +8965,6 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
---- !u!1 &1281973703
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1281973704}
-  m_Layer: 0
-  m_Name: Bottom Right Hallway - Bottom Right
-  m_TagString: Location
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1281973704
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1281973703}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 68.07, y: -11.89, z: -0.73}
-  m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
-  m_Children: []
-  m_Father: {fileID: 190709023}
-  m_RootOrder: 22
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1286716546
 GameObject:
   m_ObjectHideFlags: 0
@@ -10914,7 +10668,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: d3d7b4c47e6775946a4426a0960bd9d1, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -10950,7 +10704,6 @@ Transform:
   m_Children:
   - {fileID: 662147939}
   - {fileID: 1847828869}
-  - {fileID: 1231348303}
   m_Father: {fileID: 0}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11902,80 +11655,6 @@ MeshFilter:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1602295689}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1602708500
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 1602708501}
-  - component: {fileID: 1602708502}
-  m_Layer: 0
-  m_Name: Boy
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1602708501
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1602708500}
-  m_LocalRotation: {x: 0.70374304, y: -0, z: -0, w: 0.7104546}
-  m_LocalPosition: {x: 0, y: 0.80200005, z: 0}
-  m_LocalScale: {x: 2.5229695, y: 2.5229685, z: 2.5229685}
-  m_Children: []
-  m_Father: {fileID: 1231348303}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 89.456, y: 0, z: 0}
---- !u!212 &1602708502
-SpriteRenderer:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 1602708500}
-  m_Enabled: 1
-  m_CastShadows: 0
-  m_ReceiveShadows: 0
-  m_DynamicOccludee: 1
-  m_MotionVectors: 1
-  m_LightProbeUsage: 1
-  m_ReflectionProbeUsage: 1
-  m_RenderingLayerMask: 4294967295
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
-  m_StaticBatchInfo:
-    firstSubMesh: 0
-    subMeshCount: 0
-  m_StaticBatchRoot: {fileID: 0}
-  m_ProbeAnchor: {fileID: 0}
-  m_LightProbeVolumeOverride: {fileID: 0}
-  m_ScaleInLightmap: 1
-  m_PreserveUVs: 0
-  m_IgnoreNormalsForChartDetection: 0
-  m_ImportantGI: 0
-  m_StitchLightmapSeams: 0
-  m_SelectedEditorRenderState: 0
-  m_MinimumChartSize: 4
-  m_AutoUVMaxDistance: 0.5
-  m_AutoUVMaxAngle: 89
-  m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
-  m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: d3d7b4c47e6775946a4426a0960bd9d1, type: 3}
-  m_Color: {r: 1, g: 0, b: 0.80319357, a: 1}
-  m_FlipX: 0
-  m_FlipY: 0
-  m_DrawMode: 0
-  m_Size: {x: 0.69, y: 0.81}
-  m_AdaptiveModeThreshold: 0.5
-  m_SpriteTileMode: 0
-  m_WasSpriteAssigned: 1
-  m_MaskInteraction: 0
 --- !u!1 &1609034252
 GameObject:
   m_ObjectHideFlags: 0
@@ -13647,7 +13326,7 @@ GameObject:
   - component: {fileID: 1847828871}
   - component: {fileID: 1847828870}
   m_Layer: 0
-  m_Name: Father
+  m_Name: Mother (1)
   m_TagString: Characters
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -13660,7 +13339,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1847828868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.849, y: 16.473, z: -1.717}
+  m_LocalPosition: {x: 32.36, y: -7.21, z: -1.717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1515902331}
@@ -13728,42 +13407,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSpeed: 4
   InsanityValue: 0
-  InsanityTresholds: 0
+  InsanityTreshHolds: 3
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
     - Day: 0
-      Time: 9
-      Room: {fileID: 512699898}
+      Time: 8
+      Room: {fileID: 2063882010}
     - Day: 0
-      Time: 9.5
+      Time: 8.5
       Room: {fileID: 1385011160}
     - Day: 0
-      Time: 11
-      Room: {fileID: 512699898}
+      Time: 9
+      Room: {fileID: 2063882010}
     - Day: 0
-      Time: 13
-      Room: {fileID: 0}
-    - Day: 0
-      Time: 15
-      Room: {fileID: 318349646}
-    - Day: 0
-      Time: 15.5
-      Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19.5
-      Room: {fileID: 570547318}
-    - Day: 0
-      Time: 20.5
-      Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 21
-      Room: {fileID: 512699898}
-    - Day: 0
-      Time: 22.5
-      Room: {fileID: 0}
-    - Day: 0
-      Time: 23.5
+      Time: 9.5
       Room: {fileID: 1628675407}
   - PatrolOnThisInsanityLevel:
     - Day: 0
@@ -13773,6 +13431,8 @@ MonoBehaviour:
     - Day: 0
       Time: 10
       Room: {fileID: 109071200}
+  insanityHits: 0
+  patrolVal: 0
 --- !u!1 &1854701628
 GameObject:
   m_ObjectHideFlags: 0
@@ -14957,34 +14617,6 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 624747626}
   Active: 0
---- !u!1 &2053043558
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 2053043559}
-  m_Layer: 0
-  m_Name: Bottom Right Hallway - Top Left
-  m_TagString: Location
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &2053043559
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 2053043558}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 54.39, y: 2.27, z: -0.73}
-  m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
-  m_Children: []
-  m_Father: {fileID: 190709023}
-  m_RootOrder: 20
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2063882010
 GameObject:
   m_ObjectHideFlags: 0
