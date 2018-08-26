@@ -373,7 +373,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 17
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &58285377
 GameObject:
@@ -429,7 +429,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 14
+  m_RootOrder: 16
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &92810346
 GameObject:
@@ -1417,17 +1417,22 @@ Transform:
   - {fileID: 109071201}
   - {fileID: 318349647}
   - {fileID: 1475756828}
+  - {fileID: 1279374670}
+  - {fileID: 1594158126}
   - {fileID: 979381780}
   - {fileID: 1628675408}
   - {fileID: 88221173}
   - {fileID: 840891034}
   - {fileID: 2006460776}
-  - {fileID: 7087884}
   - {fileID: 1100352636}
-  - {fileID: 348524274}
-  - {fileID: 2053043559}
+  - {fileID: 553939695}
+  - {fileID: 1392653585}
+  - {fileID: 284479844}
+  - {fileID: 7087884}
   - {fileID: 505255286}
   - {fileID: 1281973704}
+  - {fileID: 348524274}
+  - {fileID: 2053043559}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1834,6 +1839,34 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &284479843
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 284479844}
+  m_Layer: 0
+  m_Name: Bottom Hallway Left End
+  m_TagString: Location
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &284479844
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 284479843}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 28.23, y: -11.89, z: -0.73}
+  m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
+  m_Children: []
+  m_Father: {fileID: 190709023}
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &285565738
 GameObject:
@@ -2443,7 +2476,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 19
+  m_RootOrder: 26
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &350822472
 GameObject:
@@ -3552,7 +3585,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 21
+  m_RootOrder: 24
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &508156738
 GameObject:
@@ -3888,6 +3921,34 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &553939694
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 553939695}
+  m_Layer: 0
+  m_Name: Top Hallway Left End
+  m_TagString: Location
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &553939695
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 553939694}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 20.28, y: 12.73, z: -0.73}
+  m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
+  m_Children: []
+  m_Father: {fileID: 190709023}
+  m_RootOrder: 20
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &554461119
 GameObject:
   m_ObjectHideFlags: 0
@@ -4593,6 +4654,9 @@ MonoBehaviour:
   - PatrolOnThisInsanityLevel:
     - Day: 0
       Time: 8
+      Room: {fileID: 1279374669}
+    - Day: 0
+      Time: 8.2
       Room: {fileID: 979381779}
     - Day: 0
       Time: 8.5
@@ -4601,7 +4665,13 @@ MonoBehaviour:
       Time: 9
       Room: {fileID: 512699898}
     - Day: 0
-      Time: 9.5
+      Time: 9.8
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 10.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 11
       Room: {fileID: 0}
     - Day: 0
       Time: 12
@@ -4616,10 +4686,16 @@ MonoBehaviour:
       Time: 14
       Room: {fileID: 0}
     - Day: 0
+      Time: 15
+      Room: {fileID: 0}
+    - Day: 0
       Time: 16
       Room: {fileID: 1628675407}
     - Day: 0
       Time: 16.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17.5
       Room: {fileID: 0}
     - Day: 0
       Time: 18.5
@@ -4635,7 +4711,7 @@ MonoBehaviour:
       Room: {fileID: 979381779}
     - Day: 0
       Time: 21.5
-      Room: {fileID: 1475756827}
+      Room: {fileID: 1279374669}
   - PatrolOnThisInsanityLevel: []
 --- !u!4 &662147939
 Transform:
@@ -4644,7 +4720,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 662147937}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 67, y: 16.8, z: -1.717}
+  m_LocalPosition: {x: 61.18, y: 16.47, z: -1.717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 95746398}
@@ -5959,7 +6035,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 15
+  m_RootOrder: 17
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &871626550
 GameObject:
@@ -6673,7 +6749,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 12
+  m_RootOrder: 14
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1008299926
 GameObject:
@@ -7704,7 +7780,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1100352636}
   m_Layer: 0
-  m_Name: Top Right Hallway
+  m_Name: Top Hallway In front of Elevators
   m_TagString: Location
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7717,11 +7793,11 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1100352635}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 58.34, y: 12.73, z: -0.73}
+  m_LocalPosition: {x: 45.29, y: 12.73, z: -0.73}
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1101204660
 GameObject:
@@ -8816,58 +8892,91 @@ MonoBehaviour:
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
     - Day: 0
+      Time: 8
+      Room: {fileID: 1475756827}
+    - Day: 0
       Time: 9
-      Room: {fileID: 1385011160}
+      Room: {fileID: 512699898}
     - Day: 0
       Time: 10
-      Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 11
       Room: {fileID: 1385011160}
     - Day: 0
-      Time: 11.25
+      Time: 11.5
       Room: {fileID: 1628675407}
     - Day: 0
-      Time: 12
+      Time: 11.75
       Room: {fileID: 512699898}
     - Day: 0
       Time: 13
-      Room: {fileID: 570547318}
+      Room: {fileID: 1100352635}
+    - Day: 0
+      Time: 13.25
+      Room: {fileID: 553939694}
     - Day: 0
       Time: 13.5
-      Room: {fileID: 1385011160}
+      Room: {fileID: 1392653584}
     - Day: 0
-      Time: 13.5
-      Room: {fileID: 7087883}
+      Time: 13.15
+      Room: {fileID: 284479843}
+    - Day: 0
+      Time: 13.4
+      Room: {fileID: 505255285}
+    - Day: 0
+      Time: 13.8
+      Room: {fileID: 1281973703}
     - Day: 0
       Time: 14
       Room: {fileID: 348524273}
     - Day: 0
-      Time: 14
+      Time: 14.2
       Room: {fileID: 2053043558}
     - Day: 0
-      Time: 14
+      Time: 14.35
       Room: {fileID: 505255285}
     - Day: 0
-      Time: 14
+      Time: 14.55
       Room: {fileID: 1281973703}
     - Day: 0
-      Time: 16
+      Time: 14.7
+      Room: {fileID: 348524273}
+    - Day: 0
+      Time: 14.9
+      Room: {fileID: 2053043558}
+    - Day: 0
+      Time: 15.05
       Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 16
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 16.5
+      Room: {fileID: 0}
     - Day: 0
       Time: 17
       Room: {fileID: 0}
     - Day: 0
-      Time: 18.5
+      Time: 17.5
       Room: {fileID: 512699898}
     - Day: 0
-      Time: 19
+      Time: 18
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 18.6
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 19.2
       Room: {fileID: 0}
     - Day: 0
       Time: 20
       Room: {fileID: 979381779}
     - Day: 0
-      Time: 21
+      Time: 20.5
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 22
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 22.75
       Room: {fileID: 1475756827}
   - PatrolOnThisInsanityLevel:
     - Day: 0
@@ -9183,6 +9292,34 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1279374669
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1279374670}
+  m_Layer: 0
+  m_Name: Bedroom Mother
+  m_TagString: Location
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1279374670
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1279374669}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 61.11, y: 15.4, z: -1.65}
+  m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
+  m_Children: []
+  m_Father: {fileID: 190709023}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1281973703
 GameObject:
   m_ObjectHideFlags: 0
@@ -9209,7 +9346,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 22
+  m_RootOrder: 25
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1286716546
 GameObject:
@@ -10055,6 +10192,34 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1392653584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1392653585}
+  m_Layer: 0
+  m_Name: 'Top Hallway Left Bottom End '
+  m_TagString: Location
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1392653585
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1392653584}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 20.279999, y: 4.672946, z: -0.73}
+  m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
+  m_Children: []
+  m_Father: {fileID: 190709023}
+  m_RootOrder: 21
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1394650585
 GameObject:
   m_ObjectHideFlags: 0
@@ -11830,6 +11995,34 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1594158125
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1594158126}
+  m_Layer: 0
+  m_Name: Bedroom Father
+  m_TagString: Location
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1594158126
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1594158125}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 62.43, y: 15.4, z: -1.65}
+  m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
+  m_Children: []
+  m_Father: {fileID: 190709023}
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1602295689
 GameObject:
   m_ObjectHideFlags: 0
@@ -12236,7 +12429,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 13
+  m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1636230176
 GameObject:
@@ -13660,7 +13853,7 @@ Transform:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1847828868}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 66.849, y: 16.473, z: -1.717}
+  m_LocalPosition: {x: 62.61, y: 16.07, z: -1.717}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1515902331}
@@ -13733,6 +13926,9 @@ MonoBehaviour:
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
     - Day: 0
+      Time: 8
+      Room: {fileID: 1594158125}
+    - Day: 0
       Time: 9
       Room: {fileID: 512699898}
     - Day: 0
@@ -13745,10 +13941,13 @@ MonoBehaviour:
       Time: 13
       Room: {fileID: 0}
     - Day: 0
+      Time: 14
+      Room: {fileID: 0}
+    - Day: 0
       Time: 15
       Room: {fileID: 318349646}
     - Day: 0
-      Time: 15.5
+      Time: 15.75
       Room: {fileID: 512699898}
     - Day: 0
       Time: 19.5
@@ -13763,8 +13962,11 @@ MonoBehaviour:
       Time: 22.5
       Room: {fileID: 0}
     - Day: 0
+      Time: 23
+      Room: {fileID: 0}
+    - Day: 0
       Time: 23.5
-      Room: {fileID: 1628675407}
+      Room: {fileID: 1594158125}
   - PatrolOnThisInsanityLevel:
     - Day: 0
       Time: 9.5
@@ -14781,7 +14983,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 16
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2013564589
 GameObject:
@@ -14983,7 +15185,7 @@ Transform:
   m_LocalScale: {x: 0.44287, y: 0.44498998, z: 0.32819}
   m_Children: []
   m_Father: {fileID: 190709023}
-  m_RootOrder: 20
+  m_RootOrder: 27
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2063882010
 GameObject:
