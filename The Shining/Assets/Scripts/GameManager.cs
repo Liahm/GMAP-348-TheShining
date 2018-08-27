@@ -150,7 +150,7 @@ public class GameManager : Singleton<GameManager>
 
 			if(Physics.Raycast(ray, out hit, 1000f) && hit.collider.tag == "Interactions")
 			{
-				Debug.Log("Clicked");
+				Debug.Log("Clicked: " + hit.collider.name);
 				InsanityEffects(hit);
 			}
 		}

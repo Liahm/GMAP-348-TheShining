@@ -14,7 +14,7 @@ public class InsanityTriggers : MonoBehaviour
 	[System.NonSerialized]
 	public GameObject CharacterInRoom;
 	private Sprite initialSprite, currentSprite;
-	private float charactersInRoom;
+	public float charactersInRoom;
 	
 //---------------------------------------------------------------------MONO METHODS:
 
@@ -56,6 +56,8 @@ public class InsanityTriggers : MonoBehaviour
 		if(col.tag == "Characters")
 		{
 			charactersInRoom--;
+			if(charactersInRoom == 1)
+				Active = true;
 		}
 	}
 
