@@ -10061,13 +10061,16 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Day: 0
       Time: 20
-      Room: {fileID: 979381779}
+      Room: {fileID: 0}
     - Day: 0
       Time: 20.5
       Room: {fileID: 1475756827}
     - Day: 0
-      Time: 22
+      Time: 21
       Room: {fileID: 479831961}
+    - Day: 0
+      Time: 21.6
+      Room: {fileID: 2065606925}
     - Day: 0
       Time: 22.75
       Room: {fileID: 1475756827}
