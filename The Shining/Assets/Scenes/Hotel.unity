@@ -4648,7 +4648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSpeed: 4
   InsanityValue: 0
-  InsanityTresholds: 0
+  InsanityTresholds: 3
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
@@ -4713,6 +4713,8 @@ MonoBehaviour:
       Time: 21.5
       Room: {fileID: 1279374669}
   - PatrolOnThisInsanityLevel: []
+  insanityHits: 0
+  patrolVal: 0
 --- !u!4 &662147939
 Transform:
   m_ObjectHideFlags: 0
@@ -5808,14 +5810,14 @@ RectTransform:
   m_GameObject: {fileID: 762490787}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_Children: []
   m_Father: {fileID: 803260655}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -55, y: -443}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 309, y: 30}
   m_SizeDelta: {x: 431.21, y: 113.3}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &762490789
@@ -5838,7 +5840,7 @@ MonoBehaviour:
     m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
       Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
   m_FontData:
-    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_Font: {fileID: 12800000, guid: b3f18bbfdfb772b44803b30523c61d2e, type: 3}
     m_FontSize: 61
     m_FontStyle: 0
     m_BestFit: 0
@@ -5959,7 +5961,7 @@ MonoBehaviour:
   m_Script: {fileID: 1980459831, guid: f70555f144d8491a825f0804e09c671c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -8577,7 +8579,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1185449817
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8975,7 +8977,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSpeed: 4
   InsanityValue: 0
-  InsanityTresholds: 0
+  InsanityTresholds: 3
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
@@ -9074,6 +9076,8 @@ MonoBehaviour:
     - Day: 0
       Time: 10
       Room: {fileID: 109071200}
+  insanityHits: 0
+  patrolVal: 0
 --- !u!1 &1236625450
 GameObject:
   m_ObjectHideFlags: 0
@@ -14010,7 +14014,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSpeed: 4
   InsanityValue: 0
-  InsanityTresholds: 0
+  InsanityTresholds: 3
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
@@ -14064,6 +14068,8 @@ MonoBehaviour:
     - Day: 0
       Time: 10
       Room: {fileID: 109071200}
+  insanityHits: 0
+  patrolVal: 0
 --- !u!1 &1854701628
 GameObject:
   m_ObjectHideFlags: 0
@@ -16130,16 +16136,16 @@ RectTransform:
   m_GameObject: {fileID: 2107351121}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.782527, y: 1.7825273, z: 1.7825273}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1419091385}
   - {fileID: 1854701629}
   m_Father: {fileID: 803260655}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -515, y: -449}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 140, y: 35}
   m_SizeDelta: {x: 160, y: 20}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2107351123

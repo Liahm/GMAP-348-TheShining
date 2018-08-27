@@ -50,7 +50,7 @@ public class CharactersPattern : MonoBehaviour
 
 	private GameObject endDestination;
 	
-	private int insanityHits, patrolVal = 0;
+	public int insanityHits, patrolVal = 0;
 	private NavMeshAgent Agent;
 	private bool add, moving;
 //---------------------------------------------------------------------MONO METHODS:
@@ -106,6 +106,7 @@ public class CharactersPattern : MonoBehaviour
 			}
 			
 			Scared = false;
+            UpdateStatus();
 		}
     }
 
@@ -158,4 +159,9 @@ public class CharactersPattern : MonoBehaviour
 
 		return index;
 	}
+
+    //function for updating UI status of each character (level of insanity, color, etc.)
+    public void UpdateStatus() {
+
+    }
 }
