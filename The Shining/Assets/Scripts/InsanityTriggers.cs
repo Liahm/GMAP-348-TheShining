@@ -52,6 +52,7 @@ public class InsanityTriggers : MonoBehaviour
 
 	void OnTriggerExit(Collider col)
 	{
+		Debug.Log(col.name + " just left " + gameObject.name);
 		if(col.tag == "Characters")
 		{
 			charactersInRoom--;
@@ -62,6 +63,8 @@ public class InsanityTriggers : MonoBehaviour
 	{
 		if(col.tag == "Characters")
 		{
+		Debug.Log(col.name);
+
 			if(charactersInRoom > 1)
 			{
 				Active = false;
@@ -69,10 +72,11 @@ public class InsanityTriggers : MonoBehaviour
 			}
 			else
 			{
-				Active = true;
 				//Can be clicked
 				if(GameManager.Instance.Scared)
 				{
+					Active = false;
+					Debug.Log(col.name + " just got scared in " + gameObject.name);
 					CharactersPattern cPat = col.GetComponent<CharactersPattern>();
 					cPat.Scared = true;
 					GameManager.Instance.Scared = false;
