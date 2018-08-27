@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using System;
 public class CharactersPattern : MonoBehaviour 
 {
@@ -43,7 +44,7 @@ public class CharactersPattern : MonoBehaviour
 	}
 	
 	public float CharacterSpeed;
-	public int InsanityValue, InsanityTresholds, TotalInsanityValue;
+	public int InsanityValue, InsanityThresholds, TotalInsanityValue;
 	public Insanity[] CharacterMovement;
 	[System.NonSerialized]
 	public bool Scared;
@@ -53,19 +54,30 @@ public class CharactersPattern : MonoBehaviour
 	public int insanityHits, patrolVal = 0;
 	private NavMeshAgent Agent;
 	private bool add, moving;
-//---------------------------------------------------------------------MONO METHODS:
 
-	void Start() 
+    //status bar variables
+    public GameObject CharBar;
+    public Slider CharSlider;
+    private Image CharFill;
+    //---------------------------------------------------------------------MONO METHODS:
+
+    void Start() 
 	{
 		add = false;
 		moving = true;
-		insanityHits = InsanityTresholds;
+		insanityHits = InsanityThresholds;
 		Agent = GetComponent<NavMeshAgent>();
 		Agent.speed = CharacterSpeed;
 
 		//Hardcoding 0 because this is the start of the level.
 		endDestination = CharacterMovement[0].PatrolOnThisInsanityLevel[0].Room;
-	}
+
+        //set up of character status bars
+        CharFill = CharBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>();
+        CharSlider.value = InsanityValue*InsanityThresholds + (InsanityThresholds - insanityHits);
+        CharSlider.maxValue = InsanityThresholds*TotalInsanityValue;
+        UpdateStatus();
+    }
 		
 	void Update()
     {
@@ -88,21 +100,21 @@ public class CharactersPattern : MonoBehaviour
 			insanityHits--;
 			if(insanityHits == 0)
 			{
-				if(CharacterMovement.Length > InsanityValue
-				&& InsanityValue != 0)
+				if(CharacterMovement.Length < InsanityValue     //[previously] if(CharacterMovement.Length > InsanityValue && InsanityValue != 0)                                              
+                && InsanityValue != 0)                          //[Mark didn't understand what this was checking and it broken when Insanity passed value 1]
 				{
 					InsanityValue--;
 				}
 				else
 				{
 					InsanityValue++;
-					patrolVal = PatrolValueChange();
-				}
+                    if (InsanityValue < TotalInsanityValue) patrolVal = PatrolValueChange(); //Temporary fix: PatrolValueChange() would glitch when Insanity Value exceeds total
+                }
 				if(InsanityValue == TotalInsanityValue)
 				{
 					GameManager.Instance.EndGame();
 				}
-				insanityHits = InsanityTresholds;
+				insanityHits = InsanityThresholds;
 			}
 			
 			Scared = false;
@@ -161,7 +173,14 @@ public class CharactersPattern : MonoBehaviour
 	}
 
     //function for updating UI status of each character (level of insanity, color, etc.)
-    public void UpdateStatus() {
+    public void UpdateStatus()
+    {
+        int tempInsaneVal = InsanityValue * InsanityThresholds + (InsanityThresholds - insanityHits);
+        CharSlider.value = tempInsaneVal;
 
+        if (tempInsaneVal < InsanityThresholds) CharFill.color = Color.green;
+        else if (tempInsaneVal >= InsanityThresholds && tempInsaneVal < 2 * InsanityThresholds) CharFill.color = Color.gray;
+        else if (tempInsaneVal >= 2 * InsanityThresholds && tempInsaneVal < 3 * InsanityThresholds) CharFill.color = Color.yellow;
+        else if (tempInsaneVal >= 3 * InsanityThresholds) CharFill.color = Color.red;
     }
 }

@@ -32,7 +32,8 @@ public class GameManager : Singleton<GameManager>
 
 	void Start() 
 	{
-		anim.SetBool("Fade", false);
+        anim = anim.GetComponent<Animator>();
+        anim.SetBool("Fade", false);
 		Fill = ScareBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>();
 		Bar.value = ScareMeterValue;
 		Bar.maxValue = ScareMeterValue;
