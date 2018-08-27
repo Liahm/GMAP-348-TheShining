@@ -181,8 +181,7 @@ MonoBehaviour:
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: "I mean. \nThis is the intermission scene - Day 1 finished. \nThanks for
-    play the demo\n\nNext class = 3 days. \nMore interactions.\nInsanity can be seen
-    better through days"
+    playing the demo\n\nNext class = 3 days. \nMore interactions.\nActual art assets"
 --- !u!222 &131193053
 CanvasRenderer:
   m_ObjectHideFlags: 0
