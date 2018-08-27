@@ -4712,7 +4712,189 @@ MonoBehaviour:
     - Day: 0
       Time: 21.5
       Room: {fileID: 1279374669}
-  - PatrolOnThisInsanityLevel: []
+  - PatrolOnThisInsanityLevel:
+    - Day: 0
+      Time: 8
+      Room: {fileID: 1279374669}
+    - Day: 0
+      Time: 8.2
+      Room: {fileID: 979381779}
+    - Day: 0
+      Time: 8.5
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 9
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 9.8
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 10.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 11
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 12
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 12.5
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 13
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 14
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 15
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 16
+      Room: {fileID: 1628675407}
+    - Day: 0
+      Time: 16.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 18.5
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 19
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 19.5
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 21
+      Room: {fileID: 979381779}
+    - Day: 0
+      Time: 21.5
+      Room: {fileID: 1279374669}
+  - PatrolOnThisInsanityLevel:
+    - Day: 0
+      Time: 8
+      Room: {fileID: 1279374669}
+    - Day: 0
+      Time: 8.2
+      Room: {fileID: 979381779}
+    - Day: 0
+      Time: 8.5
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 9
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 9.8
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 10.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 11
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 12
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 12.5
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 13
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 14
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 15
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 16
+      Room: {fileID: 1628675407}
+    - Day: 0
+      Time: 16.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 18.5
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 19
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 19.5
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 21
+      Room: {fileID: 979381779}
+    - Day: 0
+      Time: 21.5
+      Room: {fileID: 1279374669}
+  - PatrolOnThisInsanityLevel:
+    - Day: 0
+      Time: 8
+      Room: {fileID: 1279374669}
+    - Day: 0
+      Time: 8.2
+      Room: {fileID: 979381779}
+    - Day: 0
+      Time: 8.5
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 9
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 9.8
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 10.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 11
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 12
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 12.5
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 13
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 14
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 15
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 16
+      Room: {fileID: 1628675407}
+    - Day: 0
+      Time: 16.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 18.5
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 19
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 19.5
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 21
+      Room: {fileID: 979381779}
+    - Day: 0
+      Time: 21.5
+      Room: {fileID: 1279374669}
 --- !u!4 &662147939
 Transform:
   m_ObjectHideFlags: 0
@@ -8980,12 +9162,268 @@ MonoBehaviour:
       Room: {fileID: 1475756827}
   - PatrolOnThisInsanityLevel:
     - Day: 0
-      Time: 9.5
-      Room: {fileID: 570547318}
-  - PatrolOnThisInsanityLevel:
+      Time: 8
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 9
+      Room: {fileID: 512699898}
     - Day: 0
       Time: 10
-      Room: {fileID: 109071200}
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 11.5
+      Room: {fileID: 1628675407}
+    - Day: 0
+      Time: 11.75
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 13
+      Room: {fileID: 1100352635}
+    - Day: 0
+      Time: 13.25
+      Room: {fileID: 553939694}
+    - Day: 0
+      Time: 13.5
+      Room: {fileID: 1392653584}
+    - Day: 0
+      Time: 13.15
+      Room: {fileID: 284479843}
+    - Day: 0
+      Time: 13.4
+      Room: {fileID: 505255285}
+    - Day: 0
+      Time: 13.8
+      Room: {fileID: 1281973703}
+    - Day: 0
+      Time: 14
+      Room: {fileID: 348524273}
+    - Day: 0
+      Time: 14.2
+      Room: {fileID: 2053043558}
+    - Day: 0
+      Time: 14.35
+      Room: {fileID: 505255285}
+    - Day: 0
+      Time: 14.55
+      Room: {fileID: 1281973703}
+    - Day: 0
+      Time: 14.7
+      Room: {fileID: 348524273}
+    - Day: 0
+      Time: 14.9
+      Room: {fileID: 2053043558}
+    - Day: 0
+      Time: 15.05
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 16
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 16.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17.5
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 18
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 18.6
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 19.2
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 20
+      Room: {fileID: 979381779}
+    - Day: 0
+      Time: 20.5
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 22
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 22.75
+      Room: {fileID: 1475756827}
+  - PatrolOnThisInsanityLevel:
+    - Day: 0
+      Time: 8
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 9
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 10
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 11.5
+      Room: {fileID: 1628675407}
+    - Day: 0
+      Time: 11.75
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 13
+      Room: {fileID: 1100352635}
+    - Day: 0
+      Time: 13.25
+      Room: {fileID: 553939694}
+    - Day: 0
+      Time: 13.5
+      Room: {fileID: 1392653584}
+    - Day: 0
+      Time: 13.15
+      Room: {fileID: 284479843}
+    - Day: 0
+      Time: 13.4
+      Room: {fileID: 505255285}
+    - Day: 0
+      Time: 13.8
+      Room: {fileID: 1281973703}
+    - Day: 0
+      Time: 14
+      Room: {fileID: 348524273}
+    - Day: 0
+      Time: 14.2
+      Room: {fileID: 2053043558}
+    - Day: 0
+      Time: 14.35
+      Room: {fileID: 505255285}
+    - Day: 0
+      Time: 14.55
+      Room: {fileID: 1281973703}
+    - Day: 0
+      Time: 14.7
+      Room: {fileID: 348524273}
+    - Day: 0
+      Time: 14.9
+      Room: {fileID: 2053043558}
+    - Day: 0
+      Time: 15.05
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 16
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 16.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17.5
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 18
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 18.6
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 19.2
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 20
+      Room: {fileID: 979381779}
+    - Day: 0
+      Time: 20.5
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 22
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 22.75
+      Room: {fileID: 1475756827}
+  - PatrolOnThisInsanityLevel:
+    - Day: 0
+      Time: 8
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 9
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 10
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 11.5
+      Room: {fileID: 1628675407}
+    - Day: 0
+      Time: 11.75
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 13
+      Room: {fileID: 1100352635}
+    - Day: 0
+      Time: 13.25
+      Room: {fileID: 553939694}
+    - Day: 0
+      Time: 13.5
+      Room: {fileID: 1392653584}
+    - Day: 0
+      Time: 13.15
+      Room: {fileID: 284479843}
+    - Day: 0
+      Time: 13.4
+      Room: {fileID: 505255285}
+    - Day: 0
+      Time: 13.8
+      Room: {fileID: 1281973703}
+    - Day: 0
+      Time: 14
+      Room: {fileID: 348524273}
+    - Day: 0
+      Time: 14.2
+      Room: {fileID: 2053043558}
+    - Day: 0
+      Time: 14.35
+      Room: {fileID: 505255285}
+    - Day: 0
+      Time: 14.55
+      Room: {fileID: 1281973703}
+    - Day: 0
+      Time: 14.7
+      Room: {fileID: 348524273}
+    - Day: 0
+      Time: 14.9
+      Room: {fileID: 2053043558}
+    - Day: 0
+      Time: 15.05
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 16
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 16.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 17.5
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 18
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 18.6
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 19.2
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 20
+      Room: {fileID: 979381779}
+    - Day: 0
+      Time: 20.5
+      Room: {fileID: 1475756827}
+    - Day: 0
+      Time: 22
+      Room: {fileID: 479831961}
+    - Day: 0
+      Time: 22.75
+      Room: {fileID: 1475756827}
 --- !u!1 &1236625450
 GameObject:
   m_ObjectHideFlags: 0
@@ -13969,12 +14407,130 @@ MonoBehaviour:
       Room: {fileID: 1594158125}
   - PatrolOnThisInsanityLevel:
     - Day: 0
+      Time: 8
+      Room: {fileID: 1594158125}
+    - Day: 0
+      Time: 9
+      Room: {fileID: 512699898}
+    - Day: 0
       Time: 9.5
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 11
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 13
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 14
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 15
+      Room: {fileID: 318349646}
+    - Day: 0
+      Time: 15.75
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 19.5
       Room: {fileID: 570547318}
+    - Day: 0
+      Time: 20.5
+      Room: {fileID: 1628675407}
+    - Day: 0
+      Time: 21
+      Room: {fileID: 570547318}
+    - Day: 0
+      Time: 23
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 23.5
+      Room: {fileID: 1594158125}
   - PatrolOnThisInsanityLevel:
     - Day: 0
-      Time: 10
-      Room: {fileID: 109071200}
+      Time: 8
+      Room: {fileID: 1594158125}
+    - Day: 0
+      Time: 9
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 9.5
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 11
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 13
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 14
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 15
+      Room: {fileID: 318349646}
+    - Day: 0
+      Time: 15.75
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 19.5
+      Room: {fileID: 570547318}
+    - Day: 0
+      Time: 20.5
+      Room: {fileID: 1628675407}
+    - Day: 0
+      Time: 21
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 22.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 23
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 23.5
+      Room: {fileID: 512699898}
+  - PatrolOnThisInsanityLevel:
+    - Day: 0
+      Time: 8
+      Room: {fileID: 1594158125}
+    - Day: 0
+      Time: 9
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 9.5
+      Room: {fileID: 1385011160}
+    - Day: 0
+      Time: 11
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 13
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 14
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 15
+      Room: {fileID: 318349646}
+    - Day: 0
+      Time: 15.75
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 19.5
+      Room: {fileID: 570547318}
+    - Day: 0
+      Time: 20.5
+      Room: {fileID: 1628675407}
+    - Day: 0
+      Time: 21
+      Room: {fileID: 512699898}
+    - Day: 0
+      Time: 22.5
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 23
+      Room: {fileID: 0}
+    - Day: 0
+      Time: 23.5
+      Room: {fileID: 512699898}
 --- !u!1 &1854701628
 GameObject:
   m_ObjectHideFlags: 0
