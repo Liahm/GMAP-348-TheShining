@@ -4527,7 +4527,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSpeed: 4
   InsanityValue: 0
-  InsanityTreshHolds: 3
+  InsanityTresholds: 0
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
@@ -4577,8 +4577,6 @@ MonoBehaviour:
       Time: 21.5
       Room: {fileID: 1475756827}
   - PatrolOnThisInsanityLevel: []
-  insanityHits: 0
-  patrolVal: 0
 --- !u!4 &662147939
 Transform:
   m_ObjectHideFlags: 0
@@ -5867,6 +5865,7 @@ RectTransform:
   m_Children:
   - {fileID: 2107351122}
   - {fileID: 762490788}
+  - {fileID: 1185449817}
   m_Father: {fileID: 0}
   m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -8425,6 +8424,93 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1185449816
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1185449817}
+  - component: {fileID: 1185449820}
+  - component: {fileID: 1185449819}
+  - component: {fileID: 1185449818}
+  m_Layer: 5
+  m_Name: BlackScreen
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1185449817
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1185449816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 22.50544, y: 13.58486, z: 10.734388}
+  m_Children: []
+  m_Father: {fileID: 803260655}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 32, y: 89}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1185449818
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1185449816}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: c996b7ca2137bae4fa443dfd9275fad8, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!114 &1185449819
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1185449816}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: -765806418, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+--- !u!222 &1185449820
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1185449816}
 --- !u!1 &1185539569
 GameObject:
   m_ObjectHideFlags: 0
@@ -13300,6 +13386,7 @@ MonoBehaviour:
   Bar: {fileID: 2107351123}
   text: {fileID: 762490789}
   DepletedText: You can't Scare
+  anim: {fileID: 1185449818}
 --- !u!4 &1801302887
 Transform:
   m_ObjectHideFlags: 0
@@ -13407,7 +13494,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   CharacterSpeed: 4
   InsanityValue: 0
-  InsanityTreshHolds: 3
+  InsanityTresholds: 0
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
@@ -13431,8 +13518,6 @@ MonoBehaviour:
     - Day: 0
       Time: 10
       Room: {fileID: 109071200}
-  insanityHits: 0
-  patrolVal: 0
 --- !u!1 &1854701628
 GameObject:
   m_ObjectHideFlags: 0

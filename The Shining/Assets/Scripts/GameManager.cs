@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using MyUtility;
 using UnityEngine.UI; 
+using UnityEngine.SceneManagement;
 
 public class GameManager : Singleton<GameManager> 
 {
@@ -17,9 +18,11 @@ public class GameManager : Singleton<GameManager>
 	public Slider Bar;
 	public Text text;
 	public string DepletedText;
+	public Animator anim;
 
 	[System.NonSerialized]
 	public bool AllowScare, Scared;
+	private int today;
 	private float tempRealTimePerDay, tempDayStart, tempDayEnds, maxScareMeterValue;
 	private bool day;
 	private Vector3 mousePos;
@@ -29,11 +32,13 @@ public class GameManager : Singleton<GameManager>
 
 	void Start() 
 	{
+		anim.SetBool("Fade", false);
 		Fill = ScareBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>();
 		Bar.value = ScareMeterValue;
 		Bar.maxValue = ScareMeterValue;
 		maxScareMeterValue = ScareMeterValue;
 		GameDay = 1;
+		today = GameDay;
 		tempDayEnds = DayEnds ;
 		tempDayStart = DayStart ;
 		RealTimePerDay *= 60;
@@ -57,10 +62,14 @@ public class GameManager : Singleton<GameManager>
 		{
 			GameClock += (Time.deltaTime * ((tempDayEnds - tempDayStart) / (tempRealTimePerDay)));
 		}
-		else if(GameClock >= DayEnds)
+		else if(GameClock >= DayEnds && today == GameDay)
 		{
 			//End Day
 			//Fade to black, then either change scenes, or just move players. IDK yet
+
+			//FOR WEEK 1 ONLY
+			EndGame();
+			//
 			GameDay++;
 		}
 
@@ -79,7 +88,16 @@ public class GameManager : Singleton<GameManager>
 
 	public void EndGame()	
 	{
+		anim.SetBool("Fade", true);
+
+		StartCoroutine(EndGameRoutine());
 		Debug.Log("IT'S DAY 3");
+	}
+	public IEnumerator EndGameRoutine()
+	{
+		yield return new WaitForSeconds(3);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		//endScreen.SetActive(true);
 	}
 	public void ScareMeter()
 	{
@@ -104,7 +122,7 @@ public class GameManager : Singleton<GameManager>
 	}
 	public void ChangeSliderColor()
 	{
-		if(ScareMeterValue <= 0)
+		if(ScareMeterValue < 50)
 		{
 			Fill.color = Color.red;
 		}
