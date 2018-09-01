@@ -9,12 +9,27 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: f7a57f510b7df6445b51489711385b07
   - enabled: 1
+    path: Assets/Scenes/Hotel Day 1.unity
+    guid: 1b0b33d083f9c5142a210d0cc47acc5e
+  - enabled: 0
     path: Assets/Scenes/Hotel.unity
     guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/Intermission.unity
     guid: 18f5670ad0ab55f4c95ea5c78ec0820c
   - enabled: 1
+    path: Assets/Scenes/Hotel Day 2.unity
+    guid: 42b943d9cf694c140a514b12e0c924f4
+  - enabled: 1
+    path: Assets/Scenes/Intermission 1.unity
+    guid: 4ba282e4778a69242af9ee13cc71ea18
+  - enabled: 1
+    path: Assets/Scenes/Hotel Day 3.unity
+    guid: ea064b2aa47409848b9c3199582149d3
+  - enabled: 1
     path: Assets/Scenes/End.unity
     guid: a31021804936bfb41a13025d44271599
+  - enabled: 1
+    path: Assets/Scenes/Defeat.unity
+    guid: 2dfd963b533949a4a80252c7645b9ed7
   m_configObjects: {}

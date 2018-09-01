@@ -12,7 +12,6 @@ public class CharactersPattern : MonoBehaviour
 	[System.Serializable]
 	public class Patrol
 	{
-		public int Day;
 		public float Time;
 		public GameObject Room;
 		
@@ -59,6 +58,8 @@ public class CharactersPattern : MonoBehaviour
     public GameObject CharBar;
     public Slider CharSlider;
     private Image CharFill;
+	private SceneVars sceneVars;
+
     //---------------------------------------------------------------------MONO METHODS:
 
     void Start() 
@@ -68,9 +69,27 @@ public class CharactersPattern : MonoBehaviour
 		insanityHits = InsanityThresholds;
 		Agent = GetComponent<NavMeshAgent>();
 		Agent.speed = CharacterSpeed;
-
-		//Hardcoding 0 because this is the start of the level.
-		endDestination = CharacterMovement[0].PatrolOnThisInsanityLevel[0].Room;
+		sceneVars = GameObject.FindObjectOfType<SceneVars>();
+	
+		if(sceneVars.ShinningCharacters != null
+			&& UnityEngine.SceneManagement.SceneManager.GetActiveScene().name != "Hotel")
+		{
+			Debug.Log("Day two, it came here");
+			foreach(var characters in sceneVars.ShinningCharacters)
+			{
+				if(characters.Character == transform.gameObject.name)
+				{
+					InsanityValue = characters.InsanityValue;
+					endDestination = CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[0].Room;
+				}
+			}
+		}
+		else
+		{	
+			endDestination = CharacterMovement[0].PatrolOnThisInsanityLevel[0].Room;
+		}
+		
+				
 
         //set up of character status bars
         CharFill = CharBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>();
@@ -143,6 +162,18 @@ public class CharactersPattern : MonoBehaviour
 			}
 		}
 	}
+
+	//function for updating UI status of each character (level of insanity, color, etc.)
+    public void UpdateStatus()
+    {
+        int tempInsaneVal = InsanityValue * InsanityThresholds + (InsanityThresholds - insanityHits);
+        CharSlider.value = tempInsaneVal;
+
+        if (tempInsaneVal < InsanityThresholds) CharFill.color = Color.green;
+        else if (tempInsaneVal >= InsanityThresholds && tempInsaneVal < 2 * InsanityThresholds) CharFill.color = Color.gray;
+        else if (tempInsaneVal >= 2 * InsanityThresholds && tempInsaneVal < 3 * InsanityThresholds) CharFill.color = Color.yellow;
+        else if (tempInsaneVal >= 3 * InsanityThresholds) CharFill.color = Color.red;
+    }
 //--------------------------------------------------------------------------HELPERS:
 	private int PatrolValueChange()
 	{
@@ -172,15 +203,15 @@ public class CharactersPattern : MonoBehaviour
 		return index;
 	}
 
-    //function for updating UI status of each character (level of insanity, color, etc.)
-    public void UpdateStatus()
-    {
-        int tempInsaneVal = InsanityValue * InsanityThresholds + (InsanityThresholds - insanityHits);
-        CharSlider.value = tempInsaneVal;
-
-        if (tempInsaneVal < InsanityThresholds) CharFill.color = Color.green;
-        else if (tempInsaneVal >= InsanityThresholds && tempInsaneVal < 2 * InsanityThresholds) CharFill.color = Color.gray;
-        else if (tempInsaneVal >= 2 * InsanityThresholds && tempInsaneVal < 3 * InsanityThresholds) CharFill.color = Color.yellow;
-        else if (tempInsaneVal >= 3 * InsanityThresholds) CharFill.color = Color.red;
-    }
+    private IEnumerator LateStart()
+	{
+		yield return new WaitForSeconds(2);
+		foreach(var characters in sceneVars.ShinningCharacters)
+		{
+			if(characters.Character == transform.gameObject.name)
+			{
+				endDestination = CharacterMovement[characters.InsanityValue].PatrolOnThisInsanityLevel[0].Room;
+			}
+		}
+	}
 }

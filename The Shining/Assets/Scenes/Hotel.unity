@@ -1094,6 +1094,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 1602295689}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &127780687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1501,7 +1502,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &180400744
 GameObject:
@@ -1629,7 +1630,7 @@ Transform:
   - {fileID: 348524274}
   - {fileID: 2053043559}
   m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &195743644
 GameObject:
@@ -1748,6 +1749,48 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1001 &203052030
+Prefab:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 4315345905615726, guid: 3296287492bcc8646bb97c26f2e33611, type: 2}
+      propertyPath: m_LocalPosition.x
+      value: 59.21
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315345905615726, guid: 3296287492bcc8646bb97c26f2e33611, type: 2}
+      propertyPath: m_LocalPosition.y
+      value: 16.55
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315345905615726, guid: 3296287492bcc8646bb97c26f2e33611, type: 2}
+      propertyPath: m_LocalPosition.z
+      value: -32
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315345905615726, guid: 3296287492bcc8646bb97c26f2e33611, type: 2}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315345905615726, guid: 3296287492bcc8646bb97c26f2e33611, type: 2}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315345905615726, guid: 3296287492bcc8646bb97c26f2e33611, type: 2}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315345905615726, guid: 3296287492bcc8646bb97c26f2e33611, type: 2}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4315345905615726, guid: 3296287492bcc8646bb97c26f2e33611, type: 2}
+      propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 100100000, guid: 3296287492bcc8646bb97c26f2e33611, type: 2}
+  m_IsPrefabParent: 0
 --- !u!1 &215883006
 GameObject:
   m_ObjectHideFlags: 0
@@ -1786,7 +1829,7 @@ Transform:
   - {fileID: 1703404722}
   - {fileID: 1494555320}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &218026018
 GameObject:
@@ -2104,79 +2147,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 1911466833}
   Active: 0
---- !u!1 &282840810
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
-  - component: {fileID: 282840814}
-  - component: {fileID: 282840813}
-  - component: {fileID: 282840811}
-  m_Layer: 0
-  m_Name: Main Camera
-  m_TagString: MainCamera
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!81 &282840811
-AudioListener:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 282840810}
-  m_Enabled: 1
---- !u!20 &282840813
-Camera:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 282840810}
-  m_Enabled: 1
-  serializedVersion: 2
-  m_ClearFlags: 1
-  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
-  m_NormalizedViewPortRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
-  near clip plane: 0.3
-  far clip plane: 1000
-  field of view: 60
-  orthographic: 1
-  orthographic size: 24
-  m_Depth: -1
-  m_CullingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_RenderingPath: -1
-  m_TargetTexture: {fileID: 0}
-  m_TargetDisplay: 0
-  m_TargetEye: 3
-  m_HDR: 1
-  m_AllowMSAA: 1
-  m_AllowDynamicResolution: 0
-  m_ForceIntoRT: 1
-  m_OcclusionCulling: 1
-  m_StereoConvergence: 10
-  m_StereoSeparation: 0.022
---- !u!4 &282840814
-Transform:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  m_GameObject: {fileID: 282840810}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 57.2, y: 0.5, z: -102.2}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  charactersInRoom: 0
 --- !u!1 &284479843
 GameObject:
   m_ObjectHideFlags: 0
@@ -2821,6 +2792,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 710955196}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &348524273
 GameObject:
   m_ObjectHideFlags: 0
@@ -3083,6 +3055,47 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &355271964
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 355271966}
+  - component: {fileID: 355271965}
+  m_Layer: 0
+  m_Name: Scene Vars
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &355271965
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355271964}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cff91be9da11aaa4ab2aa07e7cac71f5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  ShinningCharacters: []
+--- !u!4 &355271966
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 355271964}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 944.5, y: 493.5, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &395611199
 GameObject:
   m_ObjectHideFlags: 0
@@ -5159,248 +5172,168 @@ MonoBehaviour:
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1279374669}
-    - Day: 0
-      Time: 8.2
+    - Time: 8.2
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 8.5
+    - Time: 8.5
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 9.8
+    - Time: 9.8
       Room: {fileID: 0}
-    - Day: 0
-      Time: 10.5
+    - Time: 10.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 11
+    - Time: 11
       Room: {fileID: 0}
-    - Day: 0
-      Time: 12
+    - Time: 12
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 12.5
+    - Time: 12.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 0}
-    - Day: 0
-      Time: 15
+    - Time: 15
       Room: {fileID: 0}
-    - Day: 0
-      Time: 16
+    - Time: 16
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 16.5
+    - Time: 16.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17.5
+    - Time: 17.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 18.5
+    - Time: 18.5
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 19
+    - Time: 19
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19.5
+    - Time: 19.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 21
+    - Time: 21
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 21.5
+    - Time: 21.5
       Room: {fileID: 1279374669}
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1279374669}
-    - Day: 0
-      Time: 8.2
+    - Time: 8.2
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 8.5
+    - Time: 8.5
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 9.8
+    - Time: 9.8
       Room: {fileID: 0}
-    - Day: 0
-      Time: 10.5
+    - Time: 10.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 11
+    - Time: 11
       Room: {fileID: 0}
-    - Day: 0
-      Time: 12
+    - Time: 12
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 12.5
+    - Time: 12.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 0}
-    - Day: 0
-      Time: 15
+    - Time: 15
       Room: {fileID: 0}
-    - Day: 0
-      Time: 16
+    - Time: 16
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 16.5
+    - Time: 16.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17.5
+    - Time: 17.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 18.5
+    - Time: 18.5
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 19
+    - Time: 19
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19.5
+    - Time: 19.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 21
+    - Time: 21
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 21.5
+    - Time: 21.5
       Room: {fileID: 1279374669}
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1279374669}
-    - Day: 0
-      Time: 8.2
+    - Time: 8.2
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 8.5
+    - Time: 8.5
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 9.8
+    - Time: 9.8
       Room: {fileID: 0}
-    - Day: 0
-      Time: 10.5
+    - Time: 10.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 11
+    - Time: 11
       Room: {fileID: 0}
-    - Day: 0
-      Time: 12
+    - Time: 12
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 12.5
+    - Time: 12.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 0}
-    - Day: 0
-      Time: 15
+    - Time: 15
       Room: {fileID: 0}
-    - Day: 0
-      Time: 16
+    - Time: 16
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 16.5
+    - Time: 16.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17.5
+    - Time: 17.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 18.5
+    - Time: 18.5
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 19
+    - Time: 19
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19.5
+    - Time: 19.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 21
+    - Time: 21
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 21.5
+    - Time: 21.5
       Room: {fileID: 1279374669}
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1279374669}
-    - Day: 0
-      Time: 8.2
+    - Time: 8.2
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 8.5
+    - Time: 8.5
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 9.8
+    - Time: 9.8
       Room: {fileID: 0}
-    - Day: 0
-      Time: 10.5
+    - Time: 10.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 11
+    - Time: 11
       Room: {fileID: 0}
-    - Day: 0
-      Time: 12
+    - Time: 12
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 12.5
+    - Time: 12.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 0}
-    - Day: 0
-      Time: 15
+    - Time: 15
       Room: {fileID: 0}
-    - Day: 0
-      Time: 16
+    - Time: 16
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 16.5
+    - Time: 16.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17.5
+    - Time: 17.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 18.5
+    - Time: 18.5
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 19
+    - Time: 19
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19.5
+    - Time: 19.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 21
+    - Time: 21
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 21.5
+    - Time: 21.5
       Room: {fileID: 1279374669}
   insanityHits: 0
   patrolVal: 0
@@ -6607,6 +6540,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 180400744}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &803260651
 GameObject:
   m_ObjectHideFlags: 0
@@ -6699,7 +6633,7 @@ RectTransform:
   - {fileID: 111221338}
   - {fileID: 1217350826}
   m_Father: {fileID: 0}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -7758,6 +7692,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 1244432101}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &1034682401
 GameObject:
   m_ObjectHideFlags: 0
@@ -9213,6 +9148,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 1052290476}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &1169968926
 GameObject:
   m_ObjectHideFlags: 0
@@ -9390,7 +9326,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1185449816
 GameObject:
@@ -9896,359 +9832,242 @@ MonoBehaviour:
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 10
+    - Time: 10
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 11.5
+    - Time: 11.5
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 11.75
+    - Time: 11.75
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 1100352635}
-    - Day: 0
-      Time: 13.25
+    - Time: 13.25
       Room: {fileID: 553939694}
-    - Day: 0
-      Time: 13.5
+    - Time: 13.5
       Room: {fileID: 1392653584}
-    - Day: 0
-      Time: 13.15
+    - Time: 13.15
       Room: {fileID: 284479843}
-    - Day: 0
-      Time: 13.4
+    - Time: 13.4
       Room: {fileID: 505255285}
-    - Day: 0
-      Time: 13.8
+    - Time: 13.8
       Room: {fileID: 1281973703}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 348524273}
-    - Day: 0
-      Time: 14.2
+    - Time: 14.2
       Room: {fileID: 2053043558}
-    - Day: 0
-      Time: 14.35
+    - Time: 14.35
       Room: {fileID: 505255285}
-    - Day: 0
-      Time: 14.55
+    - Time: 14.55
       Room: {fileID: 1281973703}
-    - Day: 0
-      Time: 14.7
+    - Time: 14.7
       Room: {fileID: 348524273}
-    - Day: 0
-      Time: 14.9
+    - Time: 14.9
       Room: {fileID: 2053043558}
-    - Day: 0
-      Time: 15.05
+    - Time: 15.05
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 16
+    - Time: 16
       Room: {fileID: 0}
-    - Day: 0
-      Time: 16.5
+    - Time: 16.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17
+    - Time: 17
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17.5
+    - Time: 17.5
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 18
+    - Time: 18
       Room: {fileID: 0}
-    - Day: 0
-      Time: 18.6
+    - Time: 18.6
       Room: {fileID: 0}
-    - Day: 0
-      Time: 19.2
+    - Time: 19.2
       Room: {fileID: 0}
-    - Day: 0
-      Time: 20
+    - Time: 20
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 20.5
+    - Time: 20.5
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 22
+    - Time: 22
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 22.75
+    - Time: 22.75
       Room: {fileID: 1475756827}
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 10
+    - Time: 10
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 11.5
+    - Time: 11.5
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 11.75
+    - Time: 11.75
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 1100352635}
-    - Day: 0
-      Time: 13.25
+    - Time: 13.25
       Room: {fileID: 553939694}
-    - Day: 0
-      Time: 13.5
+    - Time: 13.5
       Room: {fileID: 1392653584}
-    - Day: 0
-      Time: 13.15
+    - Time: 13.15
       Room: {fileID: 284479843}
-    - Day: 0
-      Time: 13.4
+    - Time: 13.4
       Room: {fileID: 505255285}
-    - Day: 0
-      Time: 13.8
+    - Time: 13.8
       Room: {fileID: 1281973703}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 348524273}
-    - Day: 0
-      Time: 14.2
+    - Time: 14.2
       Room: {fileID: 2053043558}
-    - Day: 0
-      Time: 14.35
+    - Time: 14.35
       Room: {fileID: 505255285}
-    - Day: 0
-      Time: 14.55
+    - Time: 14.55
       Room: {fileID: 1281973703}
-    - Day: 0
-      Time: 14.7
+    - Time: 14.7
       Room: {fileID: 348524273}
-    - Day: 0
-      Time: 14.9
+    - Time: 14.9
       Room: {fileID: 2053043558}
-    - Day: 0
-      Time: 15.05
+    - Time: 15.05
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 16
+    - Time: 16
       Room: {fileID: 0}
-    - Day: 0
-      Time: 16.5
+    - Time: 16.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17
+    - Time: 17
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17.5
+    - Time: 17.5
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 18
+    - Time: 18
       Room: {fileID: 0}
-    - Day: 0
-      Time: 18.6
+    - Time: 18.6
       Room: {fileID: 0}
-    - Day: 0
-      Time: 19.2
+    - Time: 19.2
       Room: {fileID: 0}
-    - Day: 0
-      Time: 20
+    - Time: 20
       Room: {fileID: 0}
-    - Day: 0
-      Time: 20.5
+    - Time: 20.5
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 21
+    - Time: 21
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 21.6
+    - Time: 21.6
       Room: {fileID: 2065606925}
-    - Day: 0
-      Time: 22.75
+    - Time: 22.75
       Room: {fileID: 1475756827}
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 10
+    - Time: 10
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 11.5
+    - Time: 11.5
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 11.75
+    - Time: 11.75
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 1100352635}
-    - Day: 0
-      Time: 13.25
+    - Time: 13.25
       Room: {fileID: 553939694}
-    - Day: 0
-      Time: 13.5
+    - Time: 13.5
       Room: {fileID: 1392653584}
-    - Day: 0
-      Time: 13.15
+    - Time: 13.15
       Room: {fileID: 284479843}
-    - Day: 0
-      Time: 13.4
+    - Time: 13.4
       Room: {fileID: 505255285}
-    - Day: 0
-      Time: 13.8
+    - Time: 13.8
       Room: {fileID: 1281973703}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 348524273}
-    - Day: 0
-      Time: 14.2
+    - Time: 14.2
       Room: {fileID: 2053043558}
-    - Day: 0
-      Time: 14.35
+    - Time: 14.35
       Room: {fileID: 505255285}
-    - Day: 0
-      Time: 14.55
+    - Time: 14.55
       Room: {fileID: 1281973703}
-    - Day: 0
-      Time: 14.7
+    - Time: 14.7
       Room: {fileID: 348524273}
-    - Day: 0
-      Time: 14.9
+    - Time: 14.9
       Room: {fileID: 2053043558}
-    - Day: 0
-      Time: 15.05
+    - Time: 15.05
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 16
+    - Time: 16
       Room: {fileID: 0}
-    - Day: 0
-      Time: 16.5
+    - Time: 16.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17
+    - Time: 17
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17.5
+    - Time: 17.5
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 18
+    - Time: 18
       Room: {fileID: 0}
-    - Day: 0
-      Time: 18.6
+    - Time: 18.6
       Room: {fileID: 0}
-    - Day: 0
-      Time: 19.2
+    - Time: 19.2
       Room: {fileID: 0}
-    - Day: 0
-      Time: 20
+    - Time: 20
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 20.5
+    - Time: 20.5
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 22
+    - Time: 22
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 22.75
+    - Time: 22.75
       Room: {fileID: 1475756827}
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 10
+    - Time: 10
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 11.5
+    - Time: 11.5
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 11.75
+    - Time: 11.75
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 1100352635}
-    - Day: 0
-      Time: 13.25
+    - Time: 13.25
       Room: {fileID: 553939694}
-    - Day: 0
-      Time: 13.5
+    - Time: 13.5
       Room: {fileID: 1392653584}
-    - Day: 0
-      Time: 13.15
+    - Time: 13.15
       Room: {fileID: 284479843}
-    - Day: 0
-      Time: 13.4
+    - Time: 13.4
       Room: {fileID: 505255285}
-    - Day: 0
-      Time: 13.8
+    - Time: 13.8
       Room: {fileID: 1281973703}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 348524273}
-    - Day: 0
-      Time: 14.2
+    - Time: 14.2
       Room: {fileID: 2053043558}
-    - Day: 0
-      Time: 14.35
+    - Time: 14.35
       Room: {fileID: 505255285}
-    - Day: 0
-      Time: 14.55
+    - Time: 14.55
       Room: {fileID: 1281973703}
-    - Day: 0
-      Time: 14.7
+    - Time: 14.7
       Room: {fileID: 348524273}
-    - Day: 0
-      Time: 14.9
+    - Time: 14.9
       Room: {fileID: 2053043558}
-    - Day: 0
-      Time: 15.05
+    - Time: 15.05
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 16
+    - Time: 16
       Room: {fileID: 0}
-    - Day: 0
-      Time: 16.5
+    - Time: 16.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17
+    - Time: 17
       Room: {fileID: 0}
-    - Day: 0
-      Time: 17.5
+    - Time: 17.5
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 18
+    - Time: 18
       Room: {fileID: 0}
-    - Day: 0
-      Time: 18.6
+    - Time: 18.6
       Room: {fileID: 0}
-    - Day: 0
-      Time: 19.2
+    - Time: 19.2
       Room: {fileID: 0}
-    - Day: 0
-      Time: 20
+    - Time: 20
       Room: {fileID: 979381779}
-    - Day: 0
-      Time: 20.5
+    - Time: 20.5
       Room: {fileID: 1475756827}
-    - Day: 0
-      Time: 22
+    - Time: 22
       Room: {fileID: 479831961}
-    - Day: 0
-      Time: 22.75
+    - Time: 22.75
       Room: {fileID: 1475756827}
   insanityHits: 0
   patrolVal: 0
@@ -10776,7 +10595,7 @@ Transform:
   - {fileID: 292648321}
   - {fileID: 915081544}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1308578460
 GameObject:
@@ -10835,6 +10654,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 554461119}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &1342534197
 GameObject:
   m_ObjectHideFlags: 0
@@ -10962,7 +10782,7 @@ Transform:
   - {fileID: 1544672574}
   - {fileID: 1557465670}
   m_Father: {fileID: 0}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1349689843
 GameObject:
@@ -11937,7 +11757,7 @@ Transform:
   m_LocalScale: {x: 109.45756, y: 4.842642, z: 52.26441}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: -90, y: 0, z: 0}
 --- !u!114 &1459449911
 MonoBehaviour:
@@ -12112,6 +11932,79 @@ NavMeshObstacle:
   m_CarveOnlyStationary: 1
   m_Center: {x: 0, y: 0, z: 0}
   m_TimeToStationary: 0.5
+--- !u!1 &1486644212
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1486644216}
+  - component: {fileID: 1486644215}
+  - component: {fileID: 1486644214}
+  m_Layer: 0
+  m_Name: Camera
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!124 &1486644214
+Behaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486644212}
+  m_Enabled: 1
+--- !u!20 &1486644215
+Camera:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486644212}
+  m_Enabled: 1
+  serializedVersion: 2
+  m_ClearFlags: 1
+  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
+  m_NormalizedViewPortRect:
+    serializedVersion: 2
+    x: 0.87
+    y: 0.75
+    width: 0.13
+    height: 0.25
+  near clip plane: 0.3
+  far clip plane: 1000
+  field of view: 60
+  orthographic: 1
+  orthographic size: 5
+  m_Depth: -1
+  m_CullingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+  m_RenderingPath: -1
+  m_TargetTexture: {fileID: 0}
+  m_TargetDisplay: 0
+  m_TargetEye: 3
+  m_HDR: 1
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
+  m_OcclusionCulling: 1
+  m_StereoConvergence: 10
+  m_StereoSeparation: 0.022
+--- !u!4 &1486644216
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1486644212}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 89.43, y: 15.35, z: -13.6}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1494555319
 GameObject:
   m_ObjectHideFlags: 0
@@ -12157,6 +12050,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 2103704221}
   Active: 0
+  charactersInRoom: 0
 --- !u!65 &1494555322
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -12461,7 +12355,7 @@ Transform:
   - {fileID: 1847828869}
   - {fileID: 1231348303}
   m_Father: {fileID: 0}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1525700217
 GameObject:
@@ -12939,6 +12833,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 611652525}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &1557465669
 GameObject:
   m_ObjectHideFlags: 0
@@ -14402,6 +14297,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 906600660}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &1719474398
 GameObject:
   m_ObjectHideFlags: 0
@@ -15249,7 +15145,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameClock: 0
-  RealTimePerDay: 6
+  RealTimePerDay: 1
   ScareMeterValue: 100
   ScareUsage: 50
   ReplenishRate: 15
@@ -15272,7 +15168,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1847828868
 GameObject:
@@ -15372,173 +15268,118 @@ MonoBehaviour:
   TotalInsanityValue: 4
   CharacterMovement:
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1594158125}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 9.5
+    - Time: 9.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 11
+    - Time: 11
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 0}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 0}
-    - Day: 0
-      Time: 15
+    - Time: 15
       Room: {fileID: 318349646}
-    - Day: 0
-      Time: 15.75
+    - Time: 15.75
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19.5
+    - Time: 19.5
       Room: {fileID: 570547318}
-    - Day: 0
-      Time: 20.5
+    - Time: 20.5
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 21
+    - Time: 21
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 22.5
+    - Time: 22.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 23
+    - Time: 23
       Room: {fileID: 0}
-    - Day: 0
-      Time: 23.5
+    - Time: 23.5
       Room: {fileID: 1594158125}
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1594158125}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 9.5
+    - Time: 9.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 11
+    - Time: 11
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 0}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 0}
-    - Day: 0
-      Time: 15
+    - Time: 15
       Room: {fileID: 318349646}
-    - Day: 0
-      Time: 15.75
+    - Time: 15.75
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19.5
+    - Time: 19.5
       Room: {fileID: 570547318}
-    - Day: 0
-      Time: 20.5
+    - Time: 20.5
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 21
+    - Time: 21
       Room: {fileID: 570547318}
-    - Day: 0
-      Time: 23
+    - Time: 23
       Room: {fileID: 0}
-    - Day: 0
-      Time: 23.5
+    - Time: 23.5
       Room: {fileID: 1594158125}
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1594158125}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 9.5
+    - Time: 9.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 11
+    - Time: 11
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 0}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 0}
-    - Day: 0
-      Time: 15
+    - Time: 15
       Room: {fileID: 318349646}
-    - Day: 0
-      Time: 15.75
+    - Time: 15.75
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19.5
+    - Time: 19.5
       Room: {fileID: 570547318}
-    - Day: 0
-      Time: 20.5
+    - Time: 20.5
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 21
+    - Time: 21
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 22.5
+    - Time: 22.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 23
+    - Time: 23
       Room: {fileID: 0}
-    - Day: 0
-      Time: 23.5
+    - Time: 23.5
       Room: {fileID: 512699898}
   - PatrolOnThisInsanityLevel:
-    - Day: 0
-      Time: 8
+    - Time: 8
       Room: {fileID: 1594158125}
-    - Day: 0
-      Time: 9
+    - Time: 9
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 9.5
+    - Time: 9.5
       Room: {fileID: 1385011160}
-    - Day: 0
-      Time: 11
+    - Time: 11
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 13
+    - Time: 13
       Room: {fileID: 0}
-    - Day: 0
-      Time: 14
+    - Time: 14
       Room: {fileID: 0}
-    - Day: 0
-      Time: 15
+    - Time: 15
       Room: {fileID: 318349646}
-    - Day: 0
-      Time: 15.75
+    - Time: 15.75
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 19.5
+    - Time: 19.5
       Room: {fileID: 570547318}
-    - Day: 0
-      Time: 20.5
+    - Time: 20.5
       Room: {fileID: 1628675407}
-    - Day: 0
-      Time: 21
+    - Time: 21
       Room: {fileID: 512699898}
-    - Day: 0
-      Time: 22.5
+    - Time: 22.5
       Room: {fileID: 0}
-    - Day: 0
-      Time: 23
+    - Time: 23
       Room: {fileID: 0}
-    - Day: 0
-      Time: 23.5
+    - Time: 23.5
       Room: {fileID: 512699898}
   insanityHits: 0
   patrolVal: 0
@@ -15635,6 +15476,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 646240186}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &1911466833
 GameObject:
   m_ObjectHideFlags: 0
@@ -16728,6 +16570,7 @@ MonoBehaviour:
   HoverSprite: {fileID: 0}
   HoverTemp: {fileID: 624747626}
   Active: 0
+  charactersInRoom: 0
 --- !u!1 &2053043558
 GameObject:
   m_ObjectHideFlags: 0

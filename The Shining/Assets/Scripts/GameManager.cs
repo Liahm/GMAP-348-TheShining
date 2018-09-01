@@ -28,6 +28,7 @@ public class GameManager : Singleton<GameManager>
 	private Vector3 mousePos;
 	private Ray ray;
 	private Image Fill;
+	private SceneVars sceneVars;
 //---------------------------------------------------------------------MONO METHODS:
 
 	void Start() 
@@ -38,7 +39,6 @@ public class GameManager : Singleton<GameManager>
 		Bar.value = ScareMeterValue;
 		Bar.maxValue = ScareMeterValue;
 		maxScareMeterValue = ScareMeterValue;
-		GameDay = 1;
 		today = GameDay;
 		tempDayEnds = DayEnds ;
 		tempDayStart = DayStart ;
@@ -46,6 +46,7 @@ public class GameManager : Singleton<GameManager>
 		tempRealTimePerDay = RealTimePerDay;
 		day = true;
 		GameClock = DayStart;
+		sceneVars = GameObject.FindObjectOfType<SceneVars>();
 	}
 		
 	void Update()
@@ -66,11 +67,8 @@ public class GameManager : Singleton<GameManager>
 		else if(GameClock >= DayEnds && today == GameDay)
 		{
 			//End Day
-			//Fade to black, then either change scenes, or just move players. IDK yet
-
-			//FOR WEEK 1 ONLY
-			EndGame();
-			//
+			EndDay();
+			sceneVars.AddValues();
 			GameDay++;
 		}
 
@@ -92,14 +90,14 @@ public class GameManager : Singleton<GameManager>
 		anim.SetBool("Fade", true);
 
 		StartCoroutine(EndGameRoutine());
-		Debug.Log("IT'S DAY 3");
 	}
-	public IEnumerator EndGameRoutine()
+	public void EndDay()	
 	{
-		yield return new WaitForSeconds(3);
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-		//endScreen.SetActive(true);
+		anim.SetBool("Fade", true);
+
+		StartCoroutine(EndDayRoutine());
 	}
+	
 	public void ScareMeter()
 	{
 		//Debug.Log(ScareMeterValue);
@@ -132,12 +130,32 @@ public class GameManager : Singleton<GameManager>
 	}
 //--------------------------------------------------------------------------HELPERS:
 	
+	private IEnumerator EndDayRoutine()
+	{
+		yield return new WaitForSeconds(3);
+		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+		//endScreen.SetActive(true);
+	}
+
+	private IEnumerator EndGameRoutine()
+	{
+		yield return new WaitForSeconds(3);
+		SceneManager.LoadScene("End");
+		//endScreen.SetActive(true);
+	}
+
+	private IEnumerator NoWinnerRoutine()
+	{
+		yield return new WaitForSeconds(3);
+		SceneManager.LoadScene("Defeat");
+		//endScreen.SetActive(true);
+	}
+
 	private void NoWinnerEndGame()
 	{
-		//Check for insanity levels on all characters
-		//If none are level 3 or higher, you didn't win the game
-		//Get highest rank
-		//Load next scene with Highest Rank name saved for usage.
+		anim.SetBool("Fade", true);
+
+		StartCoroutine(NoWinnerRoutine());
 	}
 	private void MouseMovement()
 	{
