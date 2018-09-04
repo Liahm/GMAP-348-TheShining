@@ -158,6 +158,16 @@ public class CharactersPattern : MonoBehaviour
 				else
 				{
 					endDestination = CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal].RandomRoom();
+
+					if(CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal+1].Room != null)
+					{
+						while (endDestination.transform == CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal+1].Room
+							|| endDestination.transform == CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal-1].Room)
+						{
+							Debug.Log("oho");
+							endDestination = CharacterMovement[InsanityValue].PatrolOnThisInsanityLevel[patrolVal].RandomRoom();
+						}
+					}
 				}
 			}
 		}

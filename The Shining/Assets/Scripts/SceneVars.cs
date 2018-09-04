@@ -41,6 +41,8 @@ public class SceneVars : MonoBehaviour
 	public void AddValues()
 	{
 		int i = 0;
+		characters = new GameObject[numOfCharacters];
+		characters = GameObject.FindGameObjectsWithTag("Characters");
 		foreach(GameObject character in characters)
 		{
 			ShinningCharacters[i].Character = character.name;
