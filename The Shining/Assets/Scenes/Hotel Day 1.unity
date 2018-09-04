@@ -1638,7 +1638,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   GameClock: 0
-  RealTimePerDay: 2
+  RealTimePerDay: 4
   ScareMeterValue: 100
   ScareUsage: 50
   ReplenishRate: 15
