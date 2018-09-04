@@ -11,6 +11,36 @@ Prefab:
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 1865207764318298}
   m_IsPrefabParent: 1
+--- !u!1 &1008867484933420
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4861834026251368}
+  m_Layer: 0
+  m_Name: STAAAN
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!1 &1214119958888094
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4663758939066944}
+  m_Layer: 0
+  m_Name: Momma
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1484811791301344
 GameObject:
   m_ObjectHideFlags: 0
@@ -112,6 +142,21 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &1936070244445600
+GameObject:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 4436565128444206}
+  m_Layer: 0
+  m_Name: Daddy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
 --- !u!1 &1999238341433128
 GameObject:
   m_ObjectHideFlags: 0
@@ -155,6 +200,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4063130891925088}
+  - {fileID: 4861834026251368}
   m_Father: {fileID: 4637580731010142}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -195,7 +241,21 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4151835623824182}
+  - {fileID: 4436565128444206}
   m_Father: {fileID: 4637580731010142}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4436565128444206
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1936070244445600}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.75, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4230292298942064}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &4637580731010142
@@ -225,8 +285,35 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 4164123471521350}
+  - {fileID: 4663758939066944}
   m_Father: {fileID: 4637580731010142}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4663758939066944
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1214119958888094}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4646453839775706}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &4861834026251368
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1008867484933420}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0.4, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 4107613787530124}
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!54 &54187407469218078
 Rigidbody:
@@ -328,21 +415,15 @@ MonoBehaviour:
   - PatrolOnThisInsanityLevel:
     - Time: 8
       Room: {fileID: 0}
-    - Time: 8.2
-      Room: {fileID: 0}
     - Time: 8.5
       Room: {fileID: 0}
-    - Time: 9
-      Room: {fileID: 0}
-    - Time: 9.8
+    - Time: 9.5
       Room: {fileID: 0}
     - Time: 10.5
       Room: {fileID: 0}
-    - Time: 11
+    - Time: 11.2
       Room: {fileID: 0}
     - Time: 12
-      Room: {fileID: 0}
-    - Time: 12.5
       Room: {fileID: 0}
     - Time: 13
       Room: {fileID: 0}
@@ -352,15 +433,11 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 16
       Room: {fileID: 0}
-    - Time: 16.5
-      Room: {fileID: 0}
     - Time: 17.5
-      Room: {fileID: 0}
-    - Time: 18.5
       Room: {fileID: 0}
     - Time: 19
       Room: {fileID: 0}
-    - Time: 19.5
+    - Time: 20
       Room: {fileID: 0}
     - Time: 21
       Room: {fileID: 0}
@@ -369,21 +446,15 @@ MonoBehaviour:
   - PatrolOnThisInsanityLevel:
     - Time: 8
       Room: {fileID: 0}
-    - Time: 8.2
-      Room: {fileID: 0}
     - Time: 8.5
       Room: {fileID: 0}
-    - Time: 9
-      Room: {fileID: 0}
-    - Time: 9.8
+    - Time: 9.5
       Room: {fileID: 0}
     - Time: 10.5
       Room: {fileID: 0}
-    - Time: 11
+    - Time: 11.2
       Room: {fileID: 0}
     - Time: 12
-      Room: {fileID: 0}
-    - Time: 12.5
       Room: {fileID: 0}
     - Time: 13
       Room: {fileID: 0}
@@ -393,15 +464,11 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 16
       Room: {fileID: 0}
-    - Time: 16.5
-      Room: {fileID: 0}
     - Time: 17.5
-      Room: {fileID: 0}
-    - Time: 18.5
       Room: {fileID: 0}
     - Time: 19
       Room: {fileID: 0}
-    - Time: 19.5
+    - Time: 20
       Room: {fileID: 0}
     - Time: 21
       Room: {fileID: 0}
@@ -410,13 +477,9 @@ MonoBehaviour:
   - PatrolOnThisInsanityLevel:
     - Time: 8
       Room: {fileID: 0}
-    - Time: 8.2
-      Room: {fileID: 0}
     - Time: 8.5
       Room: {fileID: 0}
-    - Time: 9
-      Room: {fileID: 0}
-    - Time: 9.8
+    - Time: 9.5
       Room: {fileID: 0}
     - Time: 10.5
       Room: {fileID: 0}
@@ -424,25 +487,19 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 12
       Room: {fileID: 0}
-    - Time: 12.5
-      Room: {fileID: 0}
     - Time: 13
       Room: {fileID: 0}
     - Time: 14
       Room: {fileID: 0}
     - Time: 15
       Room: {fileID: 0}
-    - Time: 16
+    - Time: 17
       Room: {fileID: 0}
-    - Time: 16.5
-      Room: {fileID: 0}
-    - Time: 17.5
-      Room: {fileID: 0}
-    - Time: 18.5
+    - Time: 18
       Room: {fileID: 0}
     - Time: 19
       Room: {fileID: 0}
-    - Time: 19.5
+    - Time: 20
       Room: {fileID: 0}
     - Time: 21
       Room: {fileID: 0}
@@ -451,13 +508,9 @@ MonoBehaviour:
   - PatrolOnThisInsanityLevel:
     - Time: 8
       Room: {fileID: 0}
-    - Time: 8.2
-      Room: {fileID: 0}
     - Time: 8.5
       Room: {fileID: 0}
-    - Time: 9
-      Room: {fileID: 0}
-    - Time: 9.8
+    - Time: 9.5
       Room: {fileID: 0}
     - Time: 10.5
       Room: {fileID: 0}
@@ -465,29 +518,23 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 12
       Room: {fileID: 0}
-    - Time: 12.5
-      Room: {fileID: 0}
     - Time: 13
       Room: {fileID: 0}
     - Time: 14
       Room: {fileID: 0}
     - Time: 15
       Room: {fileID: 0}
-    - Time: 16
+    - Time: 17
       Room: {fileID: 0}
-    - Time: 16.5
-      Room: {fileID: 0}
-    - Time: 17.5
-      Room: {fileID: 0}
-    - Time: 18.5
+    - Time: 18
       Room: {fileID: 0}
     - Time: 19
       Room: {fileID: 0}
-    - Time: 19.5
+    - Time: 20
       Room: {fileID: 0}
     - Time: 21
       Room: {fileID: 0}
-    - Time: 21.5
+    - Time: 22
       Room: {fileID: 0}
   insanityHits: 0
   patrolVal: 0
@@ -514,114 +561,106 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 9
       Room: {fileID: 0}
-    - Time: 9.5
+    - Time: 10
       Room: {fileID: 0}
     - Time: 11
       Room: {fileID: 0}
-    - Time: 13
+    - Time: 12.5
       Room: {fileID: 0}
-    - Time: 14
+    - Time: 13.5
       Room: {fileID: 0}
     - Time: 15
       Room: {fileID: 0}
-    - Time: 15.75
+    - Time: 16
+      Room: {fileID: 0}
+    - Time: 17
+      Room: {fileID: 0}
+    - Time: 18
       Room: {fileID: 0}
     - Time: 19.5
       Room: {fileID: 0}
-    - Time: 20.5
-      Room: {fileID: 0}
     - Time: 21
       Room: {fileID: 0}
-    - Time: 22.5
-      Room: {fileID: 0}
-    - Time: 23
-      Room: {fileID: 0}
-    - Time: 23.5
+    - Time: 22.7
       Room: {fileID: 0}
   - PatrolOnThisInsanityLevel:
     - Time: 8
       Room: {fileID: 0}
     - Time: 9
       Room: {fileID: 0}
-    - Time: 9.5
+    - Time: 10
       Room: {fileID: 0}
     - Time: 11
       Room: {fileID: 0}
-    - Time: 13
+    - Time: 12
       Room: {fileID: 0}
-    - Time: 14
+    - Time: 13.5
       Room: {fileID: 0}
     - Time: 15
       Room: {fileID: 0}
-    - Time: 15.75
+    - Time: 16
+      Room: {fileID: 0}
+    - Time: 17
+      Room: {fileID: 0}
+    - Time: 18
       Room: {fileID: 0}
     - Time: 19.5
       Room: {fileID: 0}
-    - Time: 20.5
-      Room: {fileID: 0}
     - Time: 21
       Room: {fileID: 0}
-    - Time: 23
-      Room: {fileID: 0}
-    - Time: 23.5
+    - Time: 22.7
       Room: {fileID: 0}
   - PatrolOnThisInsanityLevel:
     - Time: 8
       Room: {fileID: 0}
+    - Time: 8.2
+      Room: {fileID: 0}
     - Time: 9
       Room: {fileID: 0}
-    - Time: 9.5
+    - Time: 10
       Room: {fileID: 0}
     - Time: 11
       Room: {fileID: 0}
-    - Time: 13
+    - Time: 12
       Room: {fileID: 0}
-    - Time: 14
+    - Time: 13.5
       Room: {fileID: 0}
     - Time: 15
       Room: {fileID: 0}
-    - Time: 15.75
+    - Time: 16
+      Room: {fileID: 0}
+    - Time: 17.5
       Room: {fileID: 0}
     - Time: 19.5
       Room: {fileID: 0}
-    - Time: 20.5
-      Room: {fileID: 0}
     - Time: 21
       Room: {fileID: 0}
-    - Time: 22.5
-      Room: {fileID: 0}
-    - Time: 23
-      Room: {fileID: 0}
-    - Time: 23.5
+    - Time: 22.4
       Room: {fileID: 0}
   - PatrolOnThisInsanityLevel:
     - Time: 8
       Room: {fileID: 0}
+    - Time: 8.2
+      Room: {fileID: 0}
     - Time: 9
       Room: {fileID: 0}
-    - Time: 9.5
+    - Time: 10
       Room: {fileID: 0}
     - Time: 11
       Room: {fileID: 0}
-    - Time: 13
+    - Time: 12
       Room: {fileID: 0}
-    - Time: 14
+    - Time: 13.5
       Room: {fileID: 0}
     - Time: 15
       Room: {fileID: 0}
-    - Time: 15.75
+    - Time: 16
+      Room: {fileID: 0}
+    - Time: 17.5
       Room: {fileID: 0}
     - Time: 19.5
       Room: {fileID: 0}
-    - Time: 20.5
-      Room: {fileID: 0}
-    - Time: 21
-      Room: {fileID: 0}
-    - Time: 22.5
-      Room: {fileID: 0}
-    - Time: 23
-      Room: {fileID: 0}
-    - Time: 23.5
+    - Time: 22.4
       Room: {fileID: 0}
   insanityHits: 0
   patrolVal: 0
@@ -650,68 +689,9 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 10
       Room: {fileID: 0}
-    - Time: 11.5
+    - Time: 11
       Room: {fileID: 0}
-    - Time: 11.75
-      Room: {fileID: 0}
-    - Time: 13
-      Room: {fileID: 0}
-    - Time: 13.25
-      Room: {fileID: 0}
-    - Time: 13.5
-      Room: {fileID: 0}
-    - Time: 13.15
-      Room: {fileID: 0}
-    - Time: 13.4
-      Room: {fileID: 0}
-    - Time: 13.8
-      Room: {fileID: 0}
-    - Time: 14
-      Room: {fileID: 0}
-    - Time: 14.2
-      Room: {fileID: 0}
-    - Time: 14.35
-      Room: {fileID: 0}
-    - Time: 14.55
-      Room: {fileID: 0}
-    - Time: 14.7
-      Room: {fileID: 0}
-    - Time: 14.9
-      Room: {fileID: 0}
-    - Time: 15.05
-      Room: {fileID: 0}
-    - Time: 16
-      Room: {fileID: 0}
-    - Time: 16.5
-      Room: {fileID: 0}
-    - Time: 17
-      Room: {fileID: 0}
-    - Time: 17.5
-      Room: {fileID: 0}
-    - Time: 18
-      Room: {fileID: 0}
-    - Time: 18.6
-      Room: {fileID: 0}
-    - Time: 19.2
-      Room: {fileID: 0}
-    - Time: 20
-      Room: {fileID: 0}
-    - Time: 20.5
-      Room: {fileID: 0}
-    - Time: 22
-      Room: {fileID: 0}
-    - Time: 22.75
-      Room: {fileID: 0}
-  - PatrolOnThisInsanityLevel:
-    - Time: 8
-      Room: {fileID: 0}
-    - Time: 9
-      Room: {fileID: 0}
-    - Time: 10
-      Room: {fileID: 0}
-    - Time: 11.5
-      Room: {fileID: 0}
-    - Time: 11.75
+    - Time: 12
       Room: {fileID: 0}
     - Time: 13
       Room: {fileID: 0}
@@ -729,39 +709,17 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 14.2
       Room: {fileID: 0}
-    - Time: 14.35
-      Room: {fileID: 0}
-    - Time: 14.55
-      Room: {fileID: 0}
-    - Time: 14.7
-      Room: {fileID: 0}
-    - Time: 14.9
-      Room: {fileID: 0}
-    - Time: 15.05
-      Room: {fileID: 0}
-    - Time: 16
-      Room: {fileID: 0}
-    - Time: 16.5
-      Room: {fileID: 0}
-    - Time: 17
-      Room: {fileID: 0}
-    - Time: 17.5
+    - Time: 15
       Room: {fileID: 0}
     - Time: 18
       Room: {fileID: 0}
-    - Time: 18.6
-      Room: {fileID: 0}
-    - Time: 19.2
+    - Time: 19
       Room: {fileID: 0}
     - Time: 20
-      Room: {fileID: 0}
-    - Time: 20.5
       Room: {fileID: 0}
     - Time: 21
       Room: {fileID: 0}
-    - Time: 21.6
-      Room: {fileID: 0}
-    - Time: 22.75
+    - Time: 22
       Room: {fileID: 0}
   - PatrolOnThisInsanityLevel:
     - Time: 8
@@ -770,9 +728,9 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 10
       Room: {fileID: 0}
-    - Time: 11.5
+    - Time: 11
       Room: {fileID: 0}
-    - Time: 11.75
+    - Time: 12
       Room: {fileID: 0}
     - Time: 13
       Room: {fileID: 0}
@@ -790,37 +748,17 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 14.2
       Room: {fileID: 0}
-    - Time: 14.35
-      Room: {fileID: 0}
-    - Time: 14.55
-      Room: {fileID: 0}
-    - Time: 14.7
-      Room: {fileID: 0}
-    - Time: 14.9
-      Room: {fileID: 0}
-    - Time: 15.05
-      Room: {fileID: 0}
-    - Time: 16
-      Room: {fileID: 0}
-    - Time: 16.5
-      Room: {fileID: 0}
-    - Time: 17
-      Room: {fileID: 0}
-    - Time: 17.5
+    - Time: 15
       Room: {fileID: 0}
     - Time: 18
       Room: {fileID: 0}
-    - Time: 18.6
-      Room: {fileID: 0}
-    - Time: 19.2
+    - Time: 19
       Room: {fileID: 0}
     - Time: 20
       Room: {fileID: 0}
-    - Time: 20.5
+    - Time: 21
       Room: {fileID: 0}
     - Time: 22
-      Room: {fileID: 0}
-    - Time: 22.75
       Room: {fileID: 0}
   - PatrolOnThisInsanityLevel:
     - Time: 8
@@ -829,9 +767,9 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 10
       Room: {fileID: 0}
-    - Time: 11.5
+    - Time: 11
       Room: {fileID: 0}
-    - Time: 11.75
+    - Time: 12
       Room: {fileID: 0}
     - Time: 13
       Room: {fileID: 0}
@@ -843,43 +781,62 @@ MonoBehaviour:
       Room: {fileID: 0}
     - Time: 13.4
       Room: {fileID: 0}
-    - Time: 13.8
+    - Time: 13.8008
       Room: {fileID: 0}
     - Time: 14
       Room: {fileID: 0}
-    - Time: 14.2
-      Room: {fileID: 0}
-    - Time: 14.35
-      Room: {fileID: 0}
-    - Time: 14.55
-      Room: {fileID: 0}
-    - Time: 14.7
-      Room: {fileID: 0}
-    - Time: 14.9
-      Room: {fileID: 0}
-    - Time: 15.05
-      Room: {fileID: 0}
-    - Time: 16
-      Room: {fileID: 0}
-    - Time: 16.5
+    - Time: 15
       Room: {fileID: 0}
     - Time: 17
       Room: {fileID: 0}
-    - Time: 17.5
-      Room: {fileID: 0}
     - Time: 18
       Room: {fileID: 0}
-    - Time: 18.6
-      Room: {fileID: 0}
-    - Time: 19.2
+    - Time: 19
       Room: {fileID: 0}
     - Time: 20
       Room: {fileID: 0}
-    - Time: 20.5
+    - Time: 21
       Room: {fileID: 0}
     - Time: 22
       Room: {fileID: 0}
-    - Time: 22.75
+  - PatrolOnThisInsanityLevel:
+    - Time: 8
+      Room: {fileID: 0}
+    - Time: 8.3
+      Room: {fileID: 0}
+    - Time: 10
+      Room: {fileID: 0}
+    - Time: 11
+      Room: {fileID: 0}
+    - Time: 12
+      Room: {fileID: 0}
+    - Time: 13
+      Room: {fileID: 0}
+    - Time: 13.25
+      Room: {fileID: 0}
+    - Time: 13.5
+      Room: {fileID: 0}
+    - Time: 13.15
+      Room: {fileID: 0}
+    - Time: 13.4
+      Room: {fileID: 0}
+    - Time: 13.8008
+      Room: {fileID: 0}
+    - Time: 14
+      Room: {fileID: 0}
+    - Time: 15
+      Room: {fileID: 0}
+    - Time: 17
+      Room: {fileID: 0}
+    - Time: 18
+      Room: {fileID: 0}
+    - Time: 19
+      Room: {fileID: 0}
+    - Time: 20
+      Room: {fileID: 0}
+    - Time: 21
+      Room: {fileID: 0}
+    - Time: 22
       Room: {fileID: 0}
   insanityHits: 0
   patrolVal: 0
