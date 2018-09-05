@@ -53,6 +53,7 @@ public class CharactersPattern : MonoBehaviour
 	public int insanityHits, patrolVal = 0;
 	private NavMeshAgent Agent;
 	private bool add, moving;
+    private Animator charAnim;
 
     //status bar variables
     public GameObject CharBar;
@@ -64,7 +65,9 @@ public class CharactersPattern : MonoBehaviour
 
     void Start() 
 	{
-		add = false;
+        charAnim = GetComponentInChildren<Animator>();
+
+        add = false;
 		moving = true;
 		insanityHits = InsanityThresholds;
 		Agent = GetComponent<NavMeshAgent>();
@@ -106,13 +109,15 @@ public class CharactersPattern : MonoBehaviour
 		{
 			patrolVal++;
 			moving = false;
+            charAnim.SetBool("walking", false);
 		}
 		else if (Vector3.Distance(transform.position, endDestination.transform.position)
 					>= 1f)
 		{
 			Agent.SetDestination(endDestination.transform.position);
 			moving = true;
-		}
+            charAnim.SetBool("walking", true);
+        }
 
 		if(Scared) //Only enter once per scare
 		{
