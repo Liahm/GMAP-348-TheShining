@@ -245,7 +245,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: Restart
+  m_Text: Main Menu
 --- !u!222 &130141957
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -330,7 +330,7 @@ MonoBehaviour:
     m_PersistentCalls:
       m_Calls:
       - m_Target: {fileID: 1730969385}
-        m_MethodName: Restart
+        m_MethodName: GoBackToMainMenu
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
