@@ -2047,6 +2047,21 @@ Prefab:
       propertyPath: CharacterMovement.Array.data[3].PatrolOnThisInsanityLevel.Array.data[12].Room
       value: 
       objectReference: {fileID: 479831961}
+    - target: {fileID: 195231606043115452, guid: ca188bd792c94e549b1ca610615adcd4,
+        type: 2}
+      propertyPath: m_AngularSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195484408504845828, guid: ca188bd792c94e549b1ca610615adcd4,
+        type: 2}
+      propertyPath: m_AngularSpeed
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 195038897769079080, guid: ca188bd792c94e549b1ca610615adcd4,
+        type: 2}
+      propertyPath: m_AngularSpeed
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca188bd792c94e549b1ca610615adcd4, type: 2}
   m_IsPrefabParent: 0

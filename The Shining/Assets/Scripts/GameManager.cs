@@ -54,12 +54,6 @@ public class GameManager : Singleton<GameManager>
 		ScareMeter();
 		MouseMovement();
 
-		if(GameDay == 3)
-		{
-			//Check for end of game
-			NoWinnerEndGame();
-		}
-
 		if(GameClock <= DayEnds)
 		{
 			GameClock += (Time.deltaTime * ((tempDayEnds - tempDayStart) / (tempRealTimePerDay)));
@@ -67,8 +61,14 @@ public class GameManager : Singleton<GameManager>
 		else if(GameClock >= DayEnds && today == GameDay)
 		{
 			//End Day
-			EndDay();
 			sceneVars.AddValues();
+			if(GameDay == 3)
+			{
+				//Check for end of game
+				NoWinnerEndGame();
+			}
+			else
+				EndDay();
 			GameDay++;
 		}
 

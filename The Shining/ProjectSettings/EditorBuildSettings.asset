@@ -8,37 +8,37 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Main Menu.unity
     guid: f7a57f510b7df6445b51489711385b07
-  - enabled: 0
-    path: Assets/Scenes/oldDatScenes/old Hotel Day 1.unity
-    guid: 1b0b33d083f9c5142a210d0cc47acc5e
   - enabled: 1
     path: Assets/Scenes/Hotel Day 1.unity
     guid: b0472c081417f8f4f9ae41fdacb21117
-  - enabled: 0
-    path: Assets/Scenes/Hotel.unity
-    guid: 99c9720ab356a0642a771bea13969a05
   - enabled: 1
     path: Assets/Scenes/Intermission.unity
     guid: 18f5670ad0ab55f4c95ea5c78ec0820c
-  - enabled: 0
-    path: Assets/Scenes/oldDatScenes/old Hotel Day 2.unity
-    guid: 42b943d9cf694c140a514b12e0c924f4
   - enabled: 1
     path: Assets/Scenes/Hotel Day 2.unity
-    guid: a5042c1920cd50d41bc481f633780fba
+    guid: 89b0d7d0a4c01a046a2d6b7219d31238
   - enabled: 1
     path: Assets/Scenes/Intermission 1.unity
     guid: 4ba282e4778a69242af9ee13cc71ea18
-  - enabled: 0
-    path: Assets/Scenes/oldDatScenes/old Hotel Day 3.unity
-    guid: ea064b2aa47409848b9c3199582149d3
   - enabled: 1
     path: Assets/Scenes/Hotel Day 3.unity
-    guid: 98e5688a0d2ff7b4180f9acd7de5341d
-  - enabled: 1
-    path: Assets/Scenes/End.unity
-    guid: a31021804936bfb41a13025d44271599
+    guid: bc3190ee0c90569479c116d0610c7a25
   - enabled: 1
     path: Assets/Scenes/Defeat.unity
     guid: 2dfd963b533949a4a80252c7645b9ed7
+  - enabled: 1
+    path: Assets/Scenes/End.unity
+    guid: a31021804936bfb41a13025d44271599
+  - enabled: 0
+    path: Assets/Scenes/oldDatScenes/old Hotel Day 1.unity
+    guid: 1b0b33d083f9c5142a210d0cc47acc5e
+  - enabled: 0
+    path: Assets/Scenes/oldDatScenes/old Hotel Day 2.unity
+    guid: 42b943d9cf694c140a514b12e0c924f4
+  - enabled: 0
+    path: Assets/Scenes/oldDatScenes/old Hotel Day 3.unity
+    guid: ea064b2aa47409848b9c3199582149d3
+  - enabled: 0
+    path: Assets/Scenes/Hotel.unity
+    guid: 99c9720ab356a0642a771bea13969a05
   m_configObjects: {}

@@ -116,6 +116,14 @@ public class CharactersPattern : MonoBehaviour
 		{
 			Agent.SetDestination(endDestination.transform.position);
 			moving = true;
+			if(Vector2.Distance(endDestination.transform.position, new Vector2(23, transform.position.y)) 
+				> Vector2.Distance(endDestination.transform.position, new Vector2(68, transform.position.y)) 
+				&& transform.rotation.y != 180)
+			{
+				transform.eulerAngles = transform.eulerAngles + 180 * Vector3.up;
+			}
+			else
+				transform.eulerAngles = transform.eulerAngles - 180 * Vector3.up;
             charAnim.SetBool("walking", true);
         }
 

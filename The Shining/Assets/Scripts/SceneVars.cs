@@ -34,7 +34,8 @@ public class SceneVars : MonoBehaviour
 		ShinningCharacters = new CharacterValues[numOfCharacters];
 
 		characters = GameObject.FindGameObjectsWithTag("Characters");
-
+		
+		StartCoroutine(test());
 	}
 
 //--------------------------------------------------------------------------METHODS:
@@ -43,6 +44,7 @@ public class SceneVars : MonoBehaviour
 		int i = 0;
 		characters = new GameObject[numOfCharacters];
 		characters = GameObject.FindGameObjectsWithTag("Characters");
+		ShinningCharacters = new CharacterValues[numOfCharacters];
 		foreach(GameObject character in characters)
 		{
 			ShinningCharacters[i].Character = character.name;
@@ -53,7 +55,7 @@ public class SceneVars : MonoBehaviour
 //--------------------------------------------------------------------------HELPERS:
 	private IEnumerator test()
 	{
-		yield return new WaitForEndOfFrame();
+		yield return new WaitForSeconds(5);
 		AddValues();
 	}
 }
