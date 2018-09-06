@@ -98,7 +98,7 @@ public class CharactersPattern : MonoBehaviour
         CharFill = CharBar.transform.Find("Fill Area").Find("Fill").GetComponent<Image>();
         CharSlider.value = InsanityValue*InsanityThresholds + (InsanityThresholds - insanityHits);
         CharSlider.maxValue = InsanityThresholds*TotalInsanityValue;
-        UpdateStatus();
+        //UpdateStatus();
     }
 		
 	void Update()
@@ -148,9 +148,8 @@ public class CharactersPattern : MonoBehaviour
 				}
 				insanityHits = InsanityThresholds;
 			}
-			
 			Scared = false;
-            UpdateStatus();
+			UpdateStatus();            
 		}
     }
 

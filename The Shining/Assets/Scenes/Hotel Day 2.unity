@@ -2197,6 +2197,11 @@ Prefab:
       propertyPath: m_AngularSpeed
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114769502645258544, guid: ca188bd792c94e549b1ca610615adcd4,
+        type: 2}
+      propertyPath: InsanityValue
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ca188bd792c94e549b1ca610615adcd4, type: 2}
   m_IsPrefabParent: 0
