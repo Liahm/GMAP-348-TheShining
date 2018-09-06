@@ -49,13 +49,14 @@ public class SceneVars : MonoBehaviour
 	{
 		int i = 0;
 		
-		foreach(GameObject character in characters)
+		if(characters != null)
 		{
-			ShinningCharacters[i] = new CharacterValues(character.name, character.GetComponent<CharactersPattern>().InsanityValue);
-			i++;
+			foreach(GameObject character in characters)
+			{
+				ShinningCharacters[i] = new CharacterValues(character.name, character.GetComponent<CharactersPattern>().InsanityValue);
+				i++;
+			}
 		}
-		
-
 	}
 //--------------------------------------------------------------------------HELPERS:
 	private IEnumerator test()
