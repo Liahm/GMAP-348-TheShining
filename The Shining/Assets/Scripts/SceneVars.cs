@@ -15,6 +15,12 @@ public class SceneVars : MonoBehaviour
 	{
 		public string Character;
 		public int InsanityValue = 0;
+
+		public CharacterValues(string chara, int ins)
+		{
+			Character = chara;
+			InsanityValue = ins;
+		}
 	}
 
 	public CharacterValues[] ShinningCharacters;
@@ -42,22 +48,14 @@ public class SceneVars : MonoBehaviour
 	public void AddValues()
 	{
 		int i = 0;
-		try
+		
+		foreach(GameObject character in characters)
 		{
-			characters = new GameObject[numOfCharacters];
-			characters = GameObject.FindGameObjectsWithTag("Characters");
-			ShinningCharacters = new CharacterValues[numOfCharacters];
-			foreach(GameObject character in characters)
-			{
-				ShinningCharacters[i].Character = character.name;
-				ShinningCharacters[i].InsanityValue = character.GetComponent<CharactersPattern>().InsanityValue;
-				i++;
-			}
+			ShinningCharacters[i] = new CharacterValues(character.name, character.GetComponent<CharactersPattern>().InsanityValue);
+			i++;
 		}
-		catch(Exception e)
-		{
-			Debug.Log(e);
-		}
+		
+
 	}
 //--------------------------------------------------------------------------HELPERS:
 	private IEnumerator test()
