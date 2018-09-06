@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using System;
 public class SceneVars : MonoBehaviour 
 {
 //------------------------------------------------------------------------CONSTANTS:
@@ -42,14 +42,21 @@ public class SceneVars : MonoBehaviour
 	public void AddValues()
 	{
 		int i = 0;
-		characters = new GameObject[numOfCharacters];
-		characters = GameObject.FindGameObjectsWithTag("Characters");
-		ShinningCharacters = new CharacterValues[numOfCharacters];
-		foreach(GameObject character in characters)
+		try
 		{
-			ShinningCharacters[i].Character = character.name;
-			ShinningCharacters[i].InsanityValue = character.GetComponent<CharactersPattern>().InsanityValue;
-			i++;
+			characters = new GameObject[numOfCharacters];
+			characters = GameObject.FindGameObjectsWithTag("Characters");
+			ShinningCharacters = new CharacterValues[numOfCharacters];
+			foreach(GameObject character in characters)
+			{
+				ShinningCharacters[i].Character = character.name;
+				ShinningCharacters[i].InsanityValue = character.GetComponent<CharactersPattern>().InsanityValue;
+				i++;
+			}
+		}
+		catch(Exception e)
+		{
+			Debug.Log(e);
 		}
 	}
 //--------------------------------------------------------------------------HELPERS:
