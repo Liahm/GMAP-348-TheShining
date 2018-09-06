@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using UnityEngine.SceneManagement;
 public class SceneVars : MonoBehaviour 
 {
 //------------------------------------------------------------------------CONSTANTS:
@@ -49,6 +50,12 @@ public class SceneVars : MonoBehaviour
 	{
 		int i = 0;
 		
+		if(SceneManager.GetActiveScene().name != " Hotel Day 1")
+		{
+			characters = new GameObject[numOfCharacters];
+			characters = GameObject.FindGameObjectsWithTag("Characters");
+		}
+
 		if(characters != null)
 		{
 			foreach(GameObject character in characters)
